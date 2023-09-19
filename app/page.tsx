@@ -5,7 +5,7 @@ interface HomeProps {}
 
 const Home: React.FC<HomeProps> = () => {
   return (
-    <div className="relative z-10">
+    <div className="">
       <h1>Vivien</h1>
       <p>hello</p>
     </div>

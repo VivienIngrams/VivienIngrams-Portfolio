@@ -1,6 +1,7 @@
 import "./globals.css";
 import { PT_Sans, Playfair_Display, Bodoni_Moda } from "next/font/google";
 import Image from "next/image";
+import NavBar from "./components/Navbar";
 
 const backgroundImg =
   "https://images.unsplash.com/photo-1547499417-0b7889e0f147?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80";
@@ -38,6 +39,7 @@ export default function RootLayout({
       <body
         className={`min-h-screen ${moda.variable} ${pt.variable} ${playfair.variable}`}
       >
+        <NavBar/>
         <Image
           className="absolute top-0 left-0 right-0 bottom-0 min-h-screen bg-fixed bg-center bg-cover h-full w-full "
           src={backgroundImgLight}
