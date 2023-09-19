@@ -8,7 +8,7 @@ import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
-const NavBar = () => {
+const NavBar: React.FC = () => {
   const [nav, setNav] = useState(false);
 
   const handleNav = () => {
@@ -78,8 +78,7 @@ const NavBar = () => {
               </div>
             </div>
             <div className="text-sm m-3">
-              <p>Bringing Creativity into Code for Elevating Web Experiences</p>
-              <p>Elevating Code with Creativity for Dynamic Web Solutions</p>
+            <p> Code with Creativity for Dynamic Web Experiences</p>
             </div>
           </div>
           <div className="p-5 flex-col">
@@ -87,34 +86,34 @@ const NavBar = () => {
               <Link href="/">
                 <li className="p-3 text-sm uppercase hover:border-b">Home</li>
               </Link>
-              <Link href="/">
+              <Link href="/#About">
                 <li className="p-3 text-sm uppercase hover:border-b">About</li>
               </Link>
-              <Link href="/">
+              <Link href="/#Skills">
                 <li className="p-3 text-sm uppercase hover:border-b">Skills</li>
               </Link>
-              <Link href="/">
+              <Link href="/#Projects">
                 <li className="p-3 text-sm uppercase hover:border-b">
                   Projects
                 </li>
               </Link>
-              <Link href="/">
+              <Link href="/#Contact">
                 <li className="p-3 text-sm uppercase hover:border-b">
                   Contact
                 </li>
               </Link>
             </ul>
-            <div className="pt-40 flex item-center justify-between my-4 w-full sm:w-[80%]">
-              <div className="rounded-full shadow-md shadow-neutral-500 p-2 m-2 cursor-pointer hover:scale-105 ease-in duration-300">
+            <div className="pt-40 flex items-center justify-between my-4 w-full sm:w-[80%]">
+              <div className="rounded-full shadow-md shadow-neutral-500 p-2  cursor-pointer hover:scale-105 ease-in duration-300">
                 <FaLinkedinIn />
               </div>
-              <div className="rounded-full shadow-md shadow-neutral-500 p-2 m-2 cursor-pointer hover:scale-105 ease-in duration-300">
+              <div className="rounded-full shadow-md shadow-neutral-500 p-2  cursor-pointer hover:scale-105 ease-in duration-300">
                 <FaGithub />
               </div>
-              <div className="rounded-full shadow-md shadow-neutral-500 p-2 m-2 cursor-pointer hover:scale-105 ease-in duration-300">
+              <div className="rounded-full shadow-md shadow-neutral-500 p-2  cursor-pointer hover:scale-105 ease-in duration-300">
                 <AiOutlineMail />
               </div>
-              <div className="rounded-full shadow-md shadow-neutral-500 p-2 m-2 cursor-pointer hover:scale-105 ease-in duration-300">
+              <div className="rounded-full shadow-md shadow-neutral-500 p-2  cursor-pointer hover:scale-105 ease-in duration-300">
                 <BsFillPersonLinesFill />
               </div>
             </div>

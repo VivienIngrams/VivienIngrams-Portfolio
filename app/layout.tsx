@@ -47,8 +47,8 @@ export default function RootLayout({
           height={1500}
           alt="Sand"
         />
-        <div className="absolute top-0 left-0 w-full bg-gradient-to-b from-[rgba(247,205,205,0.4)] via-[rgba(219,248,207,0.3)] to-transparent h-full"></div>{" "}
-        <main className="">
+        <div className="absolute top-0 left-0 w-full bg-gradient-to-b from-[rgba(247,205,205,0.5)] via-[rgba(219,248,207,0.4)] to-transparent h-full"></div>{" "}
+        <main className="relative">
           {children}
         </main>
       </body>

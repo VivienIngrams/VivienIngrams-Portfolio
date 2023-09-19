@@ -1,13 +1,12 @@
 import React from "react"
-
+import Main from "./components/Main";
 
 interface HomeProps {}
 
 const Home: React.FC<HomeProps> = () => {
   return (
     <div className="">
-      <h1>Vivien</h1>
-      <p>hello</p>
+     <Main/>
     </div>
   );
 };
