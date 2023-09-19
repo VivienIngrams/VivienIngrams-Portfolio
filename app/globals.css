@@ -2,28 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
-}
+@layer base {
+  body {
+    @apply text-black tracking-wide
+  }
 
-.custom-img-dark {
-  background-image: url('https://images.unsplash.com/photo-1547499417-0b7889e0f147?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80');
-}
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold
+  }
 
-.custom-img-light {
-  background-image: ('https://images.unsplash.com/photo-1608114759160-ad0b1bac35b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1936&q=80');
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(6, 76, 57, 0.4) 30%, /* Dark emerald green with 0.5 opacity at the top (adjust as needed) */
-    rgba(6, 76, 57, 0.3) 90%, /* Dark emerald green with 0.3 opacity in the middle (adjust as needed) */
-    transparent /* Fully transparent at the bottom */
-  );
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl
+  }
+  h2 {
+    @apply text-3xl sm:text-4xl
+  }
+  li {
+    @apply cursor-pointer    
+  }
+  button {
+    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[rgba(6,76,57,0.4)] to-white
+  }
 }

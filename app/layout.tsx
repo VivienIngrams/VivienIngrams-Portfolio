@@ -1,6 +1,11 @@
 import "./globals.css";
 import { PT_Sans, Playfair_Display, Bodoni_Moda } from "next/font/google";
+import Image from "next/image";
 
+const backgroundImg =
+  "https://images.unsplash.com/photo-1547499417-0b7889e0f147?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80";
+const backgroundImgLight =
+  "https://images.unsplash.com/photo-1608114759160-ad0b1bac35b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1936&q=80";
 
 const pt = PT_Sans({
   weight: ["400"],
@@ -33,12 +38,17 @@ export default function RootLayout({
       <body
         className={`min-h-screen ${moda.variable} ${pt.variable} ${playfair.variable}`}
       >
- 
+        <Image
+          className="absolute top-0 left-0 right-0 bottom-0 min-h-screen bg-fixed bg-center bg-cover h-full w-full "
+          src={backgroundImgLight}
+          width={1000}
+          height={1500}
+          alt="Sand"
+        />
+        <div className="absolute  top-0 left-0 w-full bg-gradient-to-b from-[rgba(6,76,57,0.4)] via-[rgba(6,76,57,0.3)] to-transparent h-full"></div>{" "}
         <main className="">
-          <div className="" />
           {children}
         </main>
-   
       </body>
     </html>
   );

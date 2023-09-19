@@ -5,8 +5,9 @@ interface HomeProps {}
 
 const Home: React.FC<HomeProps> = () => {
   return (
-    <div className="flex flex-col">
-      Vivien
+    <div className="relative z-10">
+      <h1>Vivien</h1>
+      <p>hello</p>
     </div>
   );
 };
