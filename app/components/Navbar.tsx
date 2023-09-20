@@ -15,13 +15,13 @@ const NavBar: React.FC = () => {
     setNav(!nav);
   };
   return (
-    <div className="fixed w-full h-20  z-[100]">
+    <div className="fixed w-full h-100  z-[100]">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Image
-          src="/logo-V.png"
+          src="/Logo.png"
           alt="Vivien logo"
           height={50}
-          width={50}
+          width={150} 
         ></Image>
         <div>
           <ul className="hidden md:flex">
@@ -63,37 +63,34 @@ const NavBar: React.FC = () => {
           }
         >
           <div>
-            <div className="flex w-full items-center justify-between">
+            <div className="flex w-full p-2 items-center justify-between">
               <Image
-                src="/logo-V.png"
+                src="/Logo.png"
                 alt="Vivien logo"
-                height={30}
-                width={30}
+                height={60}
+                width={100}
               ></Image>
               <div
                 onClick={handleNav}
-                className="rounded-full shadow-md shadow-neutral-500 p-1 m-2 cursor-pointer"
+                className="rounded-full p-1 m-2 cursor-pointer"
               >
                 <AiOutlineClose size={25} color="#064e3b" />
               </div>
             </div>
-            <div className="text-sm m-3">
-            <p> Code with Creativity for Dynamic Web Experiences</p>
-            </div>
           </div>
-          <div className="p-5 flex-col">
+          <div className="p-5 flex-col mt-10 text-center">
             <ul>
               <Link href="/">
-                <li className="p-3 text-sm uppercase hover:border-b">Home</li>
+                <li className="p-5 text-sm uppercase hover:border-b">Home</li>
               </Link>
               <Link href="/#About">
-                <li className="p-3 text-sm uppercase hover:border-b">About</li>
+                <li className="p-5 text-sm uppercase hover:border-b">About</li>
               </Link>
               <Link href="/#Skills">
-                <li className="p-3 text-sm uppercase hover:border-b">Skills</li>
+                <li className="p-5 text-sm uppercase hover:border-b">Skills</li>
               </Link>
               <Link href="/#Projects">
-                <li className="p-3 text-sm uppercase hover:border-b">
+                <li className="p-5 text-sm uppercase hover:border-b">
                   Projects
                 </li>
               </Link>
