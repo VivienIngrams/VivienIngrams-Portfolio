@@ -15,31 +15,31 @@ const NavBar: React.FC = () => {
     setNav(!nav);
   };
   return (
-    <div className="fixed w-full h-100  z-[100]">
+    <div className="fixed w-full h-100 font-raj  z-[100]">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Image
           src="/Logo.png"
           alt="Vivien logo"
           height={50}
-          width={150} 
+          width={180} 
         ></Image>
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
             </Link>
-            <Link href="/">
+            <Link href="/#About">
               <li className="ml-10 text-sm uppercase hover:border-b">About</li>
             </Link>
-            <Link href="/">
+            <Link href="/#Skills">
               <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
             </Link>
-            <Link href="/">
+            <Link href="/#Projects">
               <li className="ml-10 text-sm uppercase hover:border-b">
                 Projects
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/#Contact">
               <li className="ml-10 text-sm uppercase hover:border-b">
                 Contact
               </li>

@@ -12,6 +12,8 @@ const config: Config = {
         pt: ["var(--font-pt-sans)"],
         playfair: ["var(--font-playfair-display)"],
         moda: ["var(--font-bodoni-moda)"],
+        poiret: ["var(--font-poiret-one)"],
+        raj: ["var(--font-rajdhani)"],
       },
     },
   },
