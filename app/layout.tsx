@@ -1,5 +1,5 @@
 import "./globals.css";
-import { PT_Sans, Playfair_Display, Bodoni_Moda, Poiret_One, Rajdhani } from "next/font/google";
+import { PT_Sans, Poiret_One, Rajdhani } from "next/font/google";
 import Image from "next/image";
 import NavBar from "./components/Navbar";
 
@@ -16,16 +16,6 @@ const pt = PT_Sans({
 const raj = Rajdhani({
   weight: ["500"],
   variable: "--font-rajdhani",
-  subsets: ["latin"],
-});
-const moda = Bodoni_Moda({
-  weight: ["400"],
-  variable: "--font-bodoni-moda",
-  subsets: ["latin"],
-});
-const playfair = Playfair_Display({
-  weight: ["400"],
-  variable: "--font-playfair-display",
   subsets: ["latin"],
 });
 const poiret = Poiret_One({
@@ -47,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`min-h-screen ${moda.variable} ${pt.variable} ${playfair.variable} ${raj.variable} ${poiret.variable}`}
+        className={`min-h-screen ${pt.variable} ${raj.variable} ${poiret.variable}`}
       >
         <NavBar/>
         <Image
@@ -57,7 +47,7 @@ export default function RootLayout({
           height={1500}
           alt="Sand"
           />
-        <div className="absolute top-0 left-0 w-full bg-gradient-to-b from-[rgba(247,205,205,0.5)] via-[rgba(219,248,207,0.4)] to-transparent h-full"></div>{" "}
+        <div className="absolute top-0 left-0 w-full bg-gradient-to-b from-[rgba(247,205,205,0.5)] via-[rgba(219,248,207,0.4)] to-[#cec8ba] h-full"></div>{" "}
         <main className="relative">
           {children}
         </main>
