@@ -15,7 +15,7 @@ const NavBar: React.FC = () => {
     setNav(!nav);
   };
   return (
-    <div className="fixed w-full h-100 font-raj  z-[100]">
+    <div className="fixed w-full h-100 font-poiret font-bold  z-[100]">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Image
           src="/Logo.png"

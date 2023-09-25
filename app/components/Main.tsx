@@ -6,7 +6,7 @@ const Main = () => {
   return (
     <div className="z-[2] w-full h-screen flex items-center justify-center text-center">
     <div className="max-w-[1240px] p-2">
-      <div className="uppercase text-md font-raj tracking-widest text-emerald-900 mt-5">
+      <div className=" text-xl font-raj tracking-widest text-slate-600 mt-5">
             <p> Coding with Creativity for Dynamic Web Experiences</p>
           </div>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-8">
