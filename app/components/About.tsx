@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const About = () => {
   return (
-    <div className="w-full md:h-screen p-2 flex items-center py-16 bg-gradient-to-b from-[#cec8ba]  via-transparent to-transparent ">
+    <div id='about' className="w-full md:h-screen p-2 flex items-center py-16 bg-gradient-to-b from-[#cec8ba]  via-transparent to-transparent ">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className=" flex flex-col items-center justify-center col-span-2 font-pt">
           <div className=" p-4 tracking-widest uppercase font-poiret font-bold text-2xl">About</div>
@@ -16,7 +16,7 @@ const About = () => {
         
         </div>
         
-        <div className="h-full  p-20 md:p-10 m-auto bg-transparent flex justify-center items-center hover:scale-105 ease-in duration-500">
+        <div className="h-full  px-20 md:p-10 m-auto bg-transparent flex justify-center items-center hover:scale-105 ease-in duration-500">
           <Image className="border-2 border-[#843A0B] shadow-xl shadow-gray-400"
           src="/Vivien.jpg"
           width={1000}

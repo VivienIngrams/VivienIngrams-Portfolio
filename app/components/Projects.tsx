@@ -2,7 +2,7 @@ import ProjectItem from "./ProjectItem";
 
 const Projects: React.FC = () => {
   return (
-    <div className="w-full">
+    <div id='projects' className="w-full">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
         <p className="mb-10 text-center font-poiret font-bold text-2xl uppercase tracking-widest">Projects</p>
         <div className="grid md:grid-cols-2 gap-8">

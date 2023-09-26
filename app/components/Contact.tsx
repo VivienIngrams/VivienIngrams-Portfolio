@@ -1,11 +1,13 @@
 import Image from "next/image";
+import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
 const Contact: React.FC = () => {
   return (
-    <div className="w-full lg:h-screen font-raj">
+    <div id='contact' className="w-full lg:h-screen font-raj">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <div className=" pb-10 tracking-widest uppercase font-poiret font-bold text-2xl text-center">
           Contact
@@ -95,14 +97,21 @@ const Contact: React.FC = () => {
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Message</label>
                   <textarea
-                    className="border-2 rounded border-neutral-300 p-3" rows={10}
-                    
+                    className="border-2 rounded border-neutral-300 p-3"
+                    rows={10}
                   />
                 </div>
                 <button className="w-full p-4 text">Send Message</button>
               </form>
             </div>
           </div>
+        </div>
+        <div className="flex justify-center py-12 ">
+          <Link href="/">
+            <div className="rounded-full shadow-md shadow-neutral-500 p-2 cursor-pointer hover:scale-105 ease-in duration-300 m-2">
+              <HiOutlineChevronDoubleUp />
+            </div>
+          </Link>
         </div>
       </div>
     </div>

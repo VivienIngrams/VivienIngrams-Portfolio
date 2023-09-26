@@ -21,25 +21,25 @@ const NavBar: React.FC = () => {
           src="/Logo.png"
           alt="Vivien logo"
           height={50}
-          width={180} 
+          width={180}
         ></Image>
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
             </Link>
-            <Link href="/#About">
+            <Link href="/#about">
               <li className="ml-10 text-sm uppercase hover:border-b">About</li>
             </Link>
-            <Link href="/#Skills">
+            <Link href="/#skills">
               <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
             </Link>
-            <Link href="/#Projects">
+            <Link href="/#projects">
               <li className="ml-10 text-sm uppercase hover:border-b">
                 Projects
               </li>
             </Link>
-            <Link href="/#Contact">
+            <Link href="/#contact">
               <li className="ml-10 text-sm uppercase hover:border-b">
                 Contact
               </li>
@@ -52,7 +52,9 @@ const NavBar: React.FC = () => {
       </div>
       <div
         className={
-          nav ? "fixed left-0 top-0 w-full h-screen md:hidden bg-slate-600/80 ease-in duration-500" : ""
+          nav
+            ? "fixed left-0 top-0 w-full h-screen md:hidden bg-slate-600/80 ease-in duration-500"
+            : ""
         }
       >
         <div
@@ -64,12 +66,14 @@ const NavBar: React.FC = () => {
         >
           <div>
             <div className="flex w-full p-2 items-center justify-between">
-              <Image
-                src="/Logo.png"
-                alt="Vivien logo"
-                height={60}
-                width={100}
-              ></Image>
+              <Link href="/">
+                <Image
+                  src="/Logo.png"
+                  alt="Vivien logo"
+                  height={60}
+                  width={100}
+                ></Image>
+              </Link>
               <div
                 onClick={handleNav}
                 className="rounded-full p-1 m-2 cursor-pointer"
@@ -81,37 +85,58 @@ const NavBar: React.FC = () => {
           <div className="p-5 flex-col mt-10 text-center">
             <ul>
               <Link href="/">
-                <li className="p-5 text-sm uppercase hover:border-b">Home</li>
+                <li
+                  className="p-5 text-sm uppercase hover:border-b"
+                  onClick={handleNav}
+                >
+                  Home
+                </li>
               </Link>
-              <Link href="/#About">
-                <li className="p-5 text-sm uppercase hover:border-b">About</li>
+              <Link href="/#about">
+                <li
+                  className="p-5 text-sm uppercase hover:border-b"
+                  onClick={handleNav}
+                >
+                  About
+                </li>
               </Link>
-              <Link href="/#Skills">
-                <li className="p-5 text-sm uppercase hover:border-b">Skills</li>
+              <Link href="/#skills">
+                <li
+                  className="p-5 text-sm uppercase hover:border-b"
+                  onClick={handleNav}
+                >
+                  Skills
+                </li>
               </Link>
-              <Link href="/#Projects">
-                <li className="p-5 text-sm uppercase hover:border-b">
+              <Link href="/#projects">
+                <li
+                  className="p-5 text-sm uppercase hover:border-b"
+                  onClick={handleNav}
+                >
                   Projects
                 </li>
               </Link>
-              <Link href="/#Contact">
-                <li className="p-3 text-sm uppercase hover:border-b">
+              <Link href="/#contact">
+                <li
+                  className="p-3 text-sm uppercase hover:border-b"
+                  onClick={handleNav}
+                >
                   Contact
                 </li>
               </Link>
             </ul>
             <div className="pt-40 flex items-center justify-between my-4 w-full sm:w-[80%]">
               <div className="rounded-full shadow-md shadow-neutral-500 p-2  cursor-pointer hover:scale-105 ease-in duration-300">
-                <FaLinkedinIn />
+              <a href="https://www.linkedin.com/in/vivien-ingrams"><FaLinkedinIn /></a>
               </div>
               <div className="rounded-full shadow-md shadow-neutral-500 p-2  cursor-pointer hover:scale-105 ease-in duration-300">
-                <FaGithub />
+                <a href="https://github.com/VivienIngrams"><FaGithub /></a>
               </div>
               <div className="rounded-full shadow-md shadow-neutral-500 p-2  cursor-pointer hover:scale-105 ease-in duration-300">
-                <AiOutlineMail />
+              <a href="mailto:vivieningrams@hotmail.com" target="_blank"><AiOutlineMail /></a>
               </div>
               <div className="rounded-full shadow-md shadow-neutral-500 p-2  cursor-pointer hover:scale-105 ease-in duration-300">
-                <BsFillPersonLinesFill />
+                <Link href="/#contact"><BsFillPersonLinesFill onClick={handleNav} /></Link>
               </div>
             </div>
           </div>
