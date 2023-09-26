@@ -21,7 +21,7 @@
     @apply cursor-pointer    
   }
   button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[rgba(6,76,57,0.4)] to-white
+    @apply shadow-xl text-orange-50 shadow-gray-400 rounded uppercase bg-gradient-to-r from-[rgba(174,36,36,0.92)] to-[#843A0B]
   }
   
 }

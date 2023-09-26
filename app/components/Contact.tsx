@@ -25,14 +25,17 @@ const Contact: React.FC = () => {
                 <p>Get in touch</p>
               </div>
             </div>
-            <div className="m-2">
+            <div className="m-4">
               <h3 className="pt-3 font-poiret font-bold text-xl uppercase tracking-wider">
                 <span className="text-3xl">V</span>ivien{" "}
                 <span className="text-3xl">I</span>ngrams
               </h3>
               <p className="p font-bold text-lg">Frontend Web Developer</p>
-              <p className="py-4">
+              <p className="pt-6">
                 I am available for part-time work or free-lance projects.
+              </p>
+              <p className="py-2">
+                {" "}
                 Contact me and we can talk about collaborating.
               </p>
             </div>
@@ -56,14 +59,48 @@ const Contact: React.FC = () => {
           {/* right */}
           <div className="col-span-3 w-full shadow-xl shadow-neutral-500 lg:p-4">
             <div className="p-4">
-                <form action="">
-                    <div className="grid md:grid-cols-2 gap-4 w-full py-2">
-                        <div className="flex flex-col">
-                            <label className="uppercase text-sm py-2">Name</label>
-                            <input className="border-2 p-3" type="text" />
-                        </div>
-                    </div>
-                </form>
+              <form action="">
+                <div className="grid md:grid-cols-2 gap-4 w-full py-2">
+                  <div className="flex flex-col">
+                    <label className="uppercase text-sm py-2">Name</label>
+                    <input
+                      className="border-2  rounded border-neutral-300 p-3"
+                      type="text"
+                    />
+                  </div>
+                  <div className="flex flex-col">
+                    <label className="uppercase text-sm py-2">
+                      Phone Number
+                    </label>
+                    <input
+                      className="border-2  rounded border-neutral-300 p-3"
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div className="flex flex-col py-2">
+                  <label className="uppercase text-sm py-2">Email</label>
+                  <input
+                    className="border-2  rounded border-neutral-300 p-3"
+                    type="email"
+                  />
+                </div>
+                <div className="flex flex-col py-2">
+                  <label className="uppercase text-sm py-2">Subject</label>
+                  <input
+                    className="border-2  rounded border-neutral-300 p-3"
+                    type="text"
+                  />
+                </div>
+                <div className="flex flex-col py-2">
+                  <label className="uppercase text-sm py-2">Message</label>
+                  <textarea
+                    className="border-2 rounded border-neutral-300 p-3" rows={10}
+                    
+                  />
+                </div>
+                <button className="w-full p-4 text">Send Message</button>
+              </form>
             </div>
           </div>
         </div>

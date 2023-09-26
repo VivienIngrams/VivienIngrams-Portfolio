@@ -46,13 +46,13 @@ const NavBar: React.FC = () => {
             </Link>
           </ul>
           <div onClick={handleNav} className="md:hidden">
-            <AiOutlineMenu size={25} color="#064e3b" />
+            <AiOutlineMenu size={25} color="#4b5563" />
           </div>
         </div>
       </div>
       <div
         className={
-          nav ? "fixed left-0 top-0 w-full h-screen md:hidden bg-emerald-950/80 ease-in duration-500" : ""
+          nav ? "fixed left-0 top-0 w-full h-screen md:hidden bg-slate-600/80 ease-in duration-500" : ""
         }
       >
         <div
@@ -74,7 +74,7 @@ const NavBar: React.FC = () => {
                 onClick={handleNav}
                 className="rounded-full p-1 m-2 cursor-pointer"
               >
-                <AiOutlineClose size={25} color="#064e3b" />
+                <AiOutlineClose size={25} color="#4b5563" />
               </div>
             </div>
           </div>
