@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
@@ -10,12 +11,31 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const NavBar: React.FC = () => {
   const [nav, setNav] = useState(false);
+  const [navBg, setNavBg] = useState("#E6E3DE");
+  const [linkColor, setLinkColor] = useState("#842f0b");
+  const pathname = usePathname();
+
+  useEffect(() => {
+    if (
+      pathname === "/research-blog" ||
+      pathname === "/model-portfolio" ||
+      pathname === "/art-facilitation"
+    ) {
+      setNavBg("#E6E3DE");
+      setLinkColor("#842f0b");
+    } else {
+      setNavBg("transparent");
+      setLinkColor("black");
+    }
+  }, [pathname]);
 
   const handleNav = () => {
     setNav(!nav);
   };
   return (
-    <div className="fixed w-full h-100 font-poiret font-bold  z-[100]">
+    <div 
+    style={{backgroundColor: `${navBg}`}}
+      className="fixed w-full h-100 font-poiret font-bold  z-[100]">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Image
           src="/Logo.png"
@@ -24,7 +44,7 @@ const NavBar: React.FC = () => {
           width={180}
         ></Image>
         <div>
-          <ul className="hidden md:flex">
+          <ul style={{color: `${linkColor}`}} className="hidden md:flex">
             <Link href="/">
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
             </Link>
@@ -127,16 +147,24 @@ const NavBar: React.FC = () => {
             </ul>
             <div className="pt-40 flex items-center justify-between my-4 w-full sm:w-[80%]">
               <div className="rounded-full shadow-md shadow-neutral-500 p-2  cursor-pointer hover:scale-105 ease-in duration-300">
-              <a href="https://www.linkedin.com/in/vivien-ingrams"><FaLinkedinIn /></a>
+                <a href="https://www.linkedin.com/in/vivien-ingrams">
+                  <FaLinkedinIn />
+                </a>
               </div>
               <div className="rounded-full shadow-md shadow-neutral-500 p-2  cursor-pointer hover:scale-105 ease-in duration-300">
-                <a href="https://github.com/VivienIngrams"><FaGithub /></a>
+                <a href="https://github.com/VivienIngrams">
+                  <FaGithub />
+                </a>
               </div>
               <div className="rounded-full shadow-md shadow-neutral-500 p-2  cursor-pointer hover:scale-105 ease-in duration-300">
-              <a href="mailto:vivieningrams@hotmail.com" target="_blank"><AiOutlineMail /></a>
+                <a href="mailto:vivieningrams@hotmail.com" target="_blank">
+                  <AiOutlineMail />
+                </a>
               </div>
               <div className="rounded-full shadow-md shadow-neutral-500 p-2  cursor-pointer hover:scale-105 ease-in duration-300">
-                <Link href="/#contact"><BsFillPersonLinesFill onClick={handleNav} /></Link>
+                <Link href="/#contact">
+                  <BsFillPersonLinesFill onClick={handleNav} />
+                </Link>
               </div>
             </div>
           </div>
