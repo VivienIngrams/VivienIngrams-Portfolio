@@ -3,7 +3,7 @@ import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
 const ArtFacilitation: React.FC = () => {
-    return ( <div className="w-full bg-[#E6E3DE] font-raj ">
+    return ( <div className="w-full bg-[#ded8ca] font-raj ">
     <div className="w-screen h-[50vh] relative">
       <div className="absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10" />
       <Image

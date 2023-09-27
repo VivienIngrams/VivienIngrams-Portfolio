@@ -20,16 +20,12 @@ const NavBar: React.FC = () => {
       pathname === "/model-portfolio" ||
       pathname === "/art-facilitation"
     ) {
-      setNavBg("rgba(230, 227, 222)");
-    } else {
+      setNavBg("#ded8ca");
+    } else if (pathname === "/") { 
       setNavBg("transparent");
-    }
-  }, [pathname]);
-
-  useEffect(() => {
-    const handleNavBg = () => {
+        const handleNavBg = () => {
       if (window.scrollY >= 400) {
-        setNavBg("rgba(230, 227, 222, 0.5)")
+        setNavBg("rgba(222, 216, 202, 0.5)")
       } else {
         setNavBg('transparent')
       }
@@ -37,8 +33,9 @@ const NavBar: React.FC = () => {
     window.addEventListener('scroll', handleNavBg)
     return () => {
       window.removeEventListener('scroll', handleNavBg);
-    };
-  }, []);
+    }
+  }
+  }, [pathname]);
 
   const handleNav = () => {
     setNav(!nav);
@@ -48,12 +45,13 @@ const NavBar: React.FC = () => {
     style={{backgroundColor: `${navBg}`}}
       className="fixed w-full h-100 font-poiret font-bold  z-[100]">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Image
+      <Link href="/"><Image
           src="/Logo.png"
           alt="Vivien logo"
           height={50}
           width={180}
-        ></Image>
+          priority={false}
+        ></Image> </Link>
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
@@ -97,7 +95,7 @@ const NavBar: React.FC = () => {
         >
           <div>
             <div className="flex w-full p-2 items-center justify-between">
-              <Link href="/">
+              <Link href="/" onClick={handleNav}>
                 <Image
                   src="/Logo.png"
                   alt="Vivien logo"
