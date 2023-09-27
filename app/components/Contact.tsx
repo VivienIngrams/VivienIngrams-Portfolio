@@ -7,17 +7,17 @@ import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
 const Contact: React.FC = () => {
   return (
-    <div id='contact' className="w-full lg:h-screen font-raj">
+    <div id='contact' className="w-full lg:h-screen font-raj py-20">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
-        <div className=" pb-10 tracking-widest uppercase font-poiret font-bold text-3xl text-center">
+        <div className=" pb-12 tracking-widest uppercase font-poiret font-bold text-3xl text-center">
           Contact
         </div>
         {/* left */}
         <div className="grid lg:grid-cols-5 gap-8">
-          <div className="col-span-3 lg:col-span-2 w-full h-full  ">
-            <div className="relative m-2 bg-[#7f1d1d] hover:scale-105 ease-in duration-300">
+          <div className="col-span-3 lg:col-span-2 w-full h-full ">
+            <div className="relative border-4 border-[#7f1d1d] hover:scale-105 ease-in duration-300">
               <Image
-                className="p-1"
+                className=""
                 src="https://images.unsplash.com/photo-1488229297570-58520851e868?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
                 height={500}
                 width={800}
@@ -59,8 +59,8 @@ const Contact: React.FC = () => {
             </div>
           </div>
           {/* right */}
-          <div className="col-span-3 w-full m-2 bg-[#e5e7eb] shadow-md shadow-neutral-500 p-1">
-            <div className="p-6 bg-[#eeece5]">
+          <div className="col-span-3 w-full border-4 border-[#e5e7eb] shadow-md shadow-neutral-500">
+            <div className="p-6 bg-[#f3f2ee]">
               <form action="">
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
