@@ -11,7 +11,7 @@ const ResearchBlog: React.FC = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src="/assets/Projects/AlexSiteResearch.png"
+          src="/assets/Projects/AlexSiteResearch1.png"
           alt="/"
         />
         <div className="absolute top-[80%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 ">

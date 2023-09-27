@@ -11,8 +11,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const NavBar: React.FC = () => {
   const [nav, setNav] = useState(false);
-  const [navBg, setNavBg] = useState("#E6E3DE");
-  const [linkColor, setLinkColor] = useState("#842f0b");
+  const [navBg, setNavBg] = useState("transparent");
   const pathname = usePathname();
 
   useEffect(() => {
@@ -21,13 +20,25 @@ const NavBar: React.FC = () => {
       pathname === "/model-portfolio" ||
       pathname === "/art-facilitation"
     ) {
-      setNavBg("#E6E3DE");
-      setLinkColor("#842f0b");
+      setNavBg("rgba(230, 227, 222)");
     } else {
       setNavBg("transparent");
-      setLinkColor("black");
     }
   }, [pathname]);
+
+  useEffect(() => {
+    const handleNavBg = () => {
+      if (window.scrollY >= 400) {
+        setNavBg("rgba(230, 227, 222, 0.5)")
+      } else {
+        setNavBg('transparent')
+      }
+    }
+    window.addEventListener('scroll', handleNavBg)
+    return () => {
+      window.removeEventListener('scroll', handleNavBg);
+    };
+  }, []);
 
   const handleNav = () => {
     setNav(!nav);
@@ -44,7 +55,7 @@ const NavBar: React.FC = () => {
           width={180}
         ></Image>
         <div>
-          <ul style={{color: `${linkColor}`}} className="hidden md:flex">
+          <ul className="hidden md:flex">
             <Link href="/">
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
             </Link>
