@@ -42,20 +42,28 @@ const Contact: React.FC = () => {
               </p>
             </div>
             <div>
-              <div className="flex items-center justify-start p-3">
-                <div className="rounded-full shadow-md shadow-neutral-500 p-2 cursor-pointer hover:scale-105 ease-in duration-300 m-2">
+            <div className="flex items-center justify-start p-3">
+            <div className="rounded-full shadow-md shadow-neutral-500 p-2 cursor-pointer hover:scale-105 ease-in duration-300 m-2">
+            <a href="https://www.linkedin.com/in/vivien-ingrams">
                   <FaLinkedinIn />
-                </div>
-                <div className="rounded-full shadow-md shadow-neutral-500 p-2 cursor-pointer hover:scale-105 ease-in duration-300 m-2">
+                </a>
+            </div>
+            <div className="rounded-full shadow-md shadow-neutral-500 p-2 cursor-pointer hover:scale-105 ease-in duration-300 m-2">
+            <a href="https://github.com/VivienIngrams">
                   <FaGithub />
-                </div>
-                <div className="rounded-full shadow-md shadow-neutral-500 p-2 cursor-pointer hover:scale-105 ease-in duration-300 m-2">
+                </a>
+            </div>
+            <div className="rounded-full shadow-md shadow-neutral-500 p-2 cursor-pointer hover:scale-105 ease-in duration-300 m-2">
+            <a href="mailto:vivieningrams@hotmail.com" target="_blank">
                   <AiOutlineMail />
-                </div>
-                <div className="rounded-full shadow-md shadow-neutral-500 p-2 cursor-pointer hover:scale-105 ease-in duration-300 m-2">
+                </a>
+            </div>
+            <div className="rounded-full shadow-md shadow-neutral-500 p-2 cursor-pointer hover:scale-105 ease-in duration-300 m-2">
+            <Link href="/#contact">
                   <BsFillPersonLinesFill />
-                </div>
-              </div>
+                </Link>
+            </div>
+          </div>
             </div>
           </div>
           {/* right */}
