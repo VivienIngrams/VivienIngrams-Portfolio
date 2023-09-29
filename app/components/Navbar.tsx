@@ -48,8 +48,8 @@ const NavBar: React.FC = () => {
       <Link href="/"><Image
           src="/Logo.png"
           alt="Vivien logo"
-          height={50}
-          width={180}
+          height={40}
+          width={130}
           priority={false}
         ></Image> </Link>
         <div>
@@ -157,17 +157,17 @@ const NavBar: React.FC = () => {
             <div className="pt-40 flex items-center justify-between my-4 w-full sm:w-[80%]">
               <div className="rounded-full shadow-md shadow-neutral-500 p-2  cursor-pointer hover:scale-105 ease-in duration-300">
                 <a href="https://www.linkedin.com/in/vivien-ingrams">
-                  <FaLinkedinIn />
+                  <FaLinkedinIn onClick={handleNav} />
                 </a>
               </div>
               <div className="rounded-full shadow-md shadow-neutral-500 p-2  cursor-pointer hover:scale-105 ease-in duration-300">
                 <a href="https://github.com/VivienIngrams">
-                  <FaGithub />
+                  <FaGithub onClick={handleNav} />
                 </a>
               </div>
               <div className="rounded-full shadow-md shadow-neutral-500 p-2  cursor-pointer hover:scale-105 ease-in duration-300">
                 <a href="mailto:vivieningrams@hotmail.com" target="_blank">
-                  <AiOutlineMail />
+                  <AiOutlineMail onClick={handleNav} />
                 </a>
               </div>
               <div className="rounded-full shadow-md shadow-neutral-500 p-2  cursor-pointer hover:scale-105 ease-in duration-300">

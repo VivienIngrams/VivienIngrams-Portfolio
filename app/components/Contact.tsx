@@ -28,9 +28,9 @@ const Contact: React.FC = () => {
               </div>
             </div>
             <div className="m-4 lg:my-12">
-              <h3 className="pt-3 font-poiret font-bold text-xl uppercase tracking-wider">
-                <span className="text-4xl">V</span>ivien{" "}
-                <span className="text-4xl">I</span>ngrams
+              <h3 className="pt-3 font-poiret font-semi-bold text-xl uppercase tracking-wider">
+                <span className="text-4xl font-medium tracking-tighter">V</span>ivien{" "}
+                <span className="text-4xl font-medium">I</span>ngrams
               </h3>
               <p className="pt-1 font-pt font-bold text-md">Frontend Web Developer</p>
               <p className="pt-6 font-pt">

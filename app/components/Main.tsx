@@ -15,16 +15,24 @@ const Main = () => {
       </div>
       <div className="flex items-center justify-between max-w-[330px] m-auto">
             <div className="rounded-full shadow-md shadow-neutral-500 p-2 cursor-pointer hover:scale-105 ease-in duration-300">
-              <FaLinkedinIn />
+            <a href="https://www.linkedin.com/in/vivien-ingrams">
+                  <FaLinkedinIn />
+                </a>
             </div>
             <div className="rounded-full shadow-md shadow-neutral-500 p-2 cursor-pointer hover:scale-105 ease-in duration-300">
-              <FaGithub />
+            <a href="https://github.com/VivienIngrams">
+                  <FaGithub />
+                </a>
             </div>
             <div className="rounded-full shadow-md shadow-neutral-500 p-2 cursor-pointer hover:scale-105 ease-in duration-300">
-              <AiOutlineMail />
+            <a href="mailto:vivieningrams@hotmail.com" target="_blank">
+                  <AiOutlineMail />
+                </a>
             </div>
             <div className="rounded-full shadow-md shadow-neutral-500 p-2 cursor-pointer hover:scale-105 ease-in duration-300">
-              <BsFillPersonLinesFill />
+            <Link href="/#contact">
+                  <BsFillPersonLinesFill />
+                </Link>
             </div>
           </div>
     </div>
