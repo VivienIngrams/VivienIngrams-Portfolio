@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation";
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import Logo from '../../public/Logo.png'
+import Logo from '../../../public/Logo.png'
 
 const NavBar: React.FC = () => {
   const [nav, setNav] = useState(false);
