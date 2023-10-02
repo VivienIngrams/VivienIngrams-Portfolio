@@ -1,11 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
+import { SyntheticEvent } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
+import ContactForm from "./ContactForm"
 
 const Contact: React.FC = () => {
+
   return (
     <div id='contact' className="w-full lg:h-screen font-raj py-20">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
@@ -22,6 +25,7 @@ const Contact: React.FC = () => {
                 height={500}
                 width={800}
                 alt=""
+                priority={false}
               />
               <div className=" font-bold text-xl absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
                 <p>Get in touch</p>
@@ -69,48 +73,7 @@ const Contact: React.FC = () => {
           {/* right */}
           <div className="col-span-3 w-full border-4 border-[#e5e7eb] shadow-md shadow-neutral-500">
             <div className="p-6 bg-[#f3f2ee]">
-              <form action="">
-                <div className="grid md:grid-cols-2 gap-4 w-full py-2">
-                  <div className="flex flex-col">
-                    <label className="uppercase text-sm py-2">Name</label>
-                    <input
-                      className="border-2  rounded border-neutral-300 p-3"
-                      type="text"
-                    />
-                  </div>
-                  <div className="flex flex-col">
-                    <label className="uppercase text-sm py-2">
-                      Phone Number
-                    </label>
-                    <input
-                      className="border-2  rounded border-neutral-300 p-3"
-                      type="text"
-                    />
-                  </div>
-                </div>
-                <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2">Email</label>
-                  <input
-                    className="border-2  rounded border-neutral-300 p-3"
-                    type="email"
-                  />
-                </div>
-                <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2">Subject</label>
-                  <input
-                    className="border-2  rounded border-neutral-300 p-3"
-                    type="text"
-                  />
-                </div>
-                <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2">Message</label>
-                  <textarea
-                    className="border-2 rounded border-neutral-300 p-3"
-                    rows={10}
-                  />
-                </div>
-                <button className="w-full p-4 mt-4 text">Send Message</button>
-              </form>
+            <ContactForm />
             </div>
           </div>
         </div>
