@@ -20,7 +20,7 @@ const ContactForm: React.FC = () => {
       message: target.message.value,
     };
 
-    const response = await fetch("/api/contact", {
+    const response = await fetch("/api/route", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
@@ -28,6 +28,9 @@ const ContactForm: React.FC = () => {
 
     if (response.ok) {
       console.log("Message sent", data);
+    }
+    if (!response.ok) {
+      console.log("Message not sent");
     }
   }
   return (
