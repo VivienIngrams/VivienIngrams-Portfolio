@@ -4,7 +4,7 @@
 
 import nodemailer from "nodemailer";
 
-export async function sendEmail(prevState: any, formData: FormData {
+// export async function sendEmail(prevState: any, formData: FormData {
 //   try {
 //     const { name, email, phone, subject, message } = await request.json();
 
@@ -46,4 +46,4 @@ export async function sendEmail(prevState: any, formData: FormData {
 //       { status: 500 }
 //     );
 //   }
-}
+// }

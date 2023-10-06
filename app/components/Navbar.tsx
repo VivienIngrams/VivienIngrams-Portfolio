@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation";
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import Logo from '../../../public/Logo.png'
+
 
 const NavBar: React.FC = () => {
   const [nav, setNav] = useState(false);
@@ -47,7 +47,7 @@ const NavBar: React.FC = () => {
       className="fixed w-full h-100 font-poiret font-bold  z-[100]">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
       <Link href="/"><Image
-          src={Logo}
+          src='/Logo.png'
           alt="Vivien logo"
           height={40}
           width={130}
@@ -98,7 +98,7 @@ const NavBar: React.FC = () => {
             <div className="flex w-full p-2 items-center justify-between">
               <Link href="/" onClick={handleNav}>
                 <Image
-                  src={Logo}
+                  src='/Logo.png'
                   alt="Vivien logo"
                   height={60}
                   width={100}
