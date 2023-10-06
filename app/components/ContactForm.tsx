@@ -4,34 +4,43 @@ const ContactForm: React.FC = () => {
   async function handleSubmit(event: any) {
     event.preventDefault();
 
-    const target = event.target as typeof event.target & {
-      name: { value: string };
-      phone: { value: string };
-      email: { value: string };
-      subject: { value: string };
-      message: { value: string };
-    };
+    // const target = event.target as typeof event.target & {
+    //   name: { value: string };
+    //   phone: { value: string };
+    //   email: { value: string };
+    //   subject: { value: string };
+    //   message: { value: string };
+    // };
 
-    const data = {
-      name: target.name.value,
-      phone: target.phone.value,
-      email: target.email.value,
-      subject: target.subject.value,
-      message: target.message.value,
-    };
+    // const data = {
+    //   name: target.name.value,
+    //   phone: target.phone.value,
+    //   email: target.email.value,
+    //   subject: target.subject.value,
+    //   message: target.message.value,
+    // };
 
-    const response = await fetch("/api/route", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
-    });
+    const formData = new FormData(event.target)
+// console.log(formData)
+    try {
+  
+      const response = await fetch('/api', {
+          method: 'post',     
 
-    if (response.ok) {
-      console.log("Message sent", data);
-    }
-    if (!response.ok) {
-      console.log("Message not sent");
-    }
+          body: formData
+      });
+
+      if (!response.ok) {
+          throw new Error(`response status: ${response.status}`);
+      }
+      const responseData = await response.json();
+      console.log(responseData['message'])
+
+      alert('Message successfully sent');
+  } catch (err) {
+      console.error(err);
+      alert("Error, please try resubmitting the form");
+  }
   }
   return (
     <form onSubmit={handleSubmit}>
@@ -42,6 +51,7 @@ const ContactForm: React.FC = () => {
           </label>
           <input
             id="name"
+            name='name'
             autoComplete="off"
             required
             minLength={3}
@@ -56,6 +66,7 @@ const ContactForm: React.FC = () => {
           </label>
           <input
             id="phone"
+            name='phone'
             autoComplete="off"
             minLength={9}
             maxLength={20}
@@ -70,6 +81,7 @@ const ContactForm: React.FC = () => {
         </label>
         <input
           id="email"
+          name="email"
           autoComplete="off"
           required
           minLength={8}
@@ -84,6 +96,7 @@ const ContactForm: React.FC = () => {
         </label>
         <input
           id="subject"
+          name="subject"
           autoComplete="off"
           className="border-2  rounded border-neutral-300 p-3"
           type="text"
@@ -95,6 +108,7 @@ const ContactForm: React.FC = () => {
         </label>
         <textarea
           id="message"
+          name="message"
           autoComplete="off"
           required
           minLength={20}
