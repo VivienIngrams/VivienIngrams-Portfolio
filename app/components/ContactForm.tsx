@@ -4,24 +4,8 @@ const ContactForm: React.FC = () => {
   async function handleSubmit(event: any) {
     event.preventDefault();
 
-    // const target = event.target as typeof event.target & {
-    //   name: { value: string };
-    //   phone: { value: string };
-    //   email: { value: string };
-    //   subject: { value: string };
-    //   message: { value: string };
-    // };
-
-    // const data = {
-    //   name: target.name.value,
-    //   phone: target.phone.value,
-    //   email: target.email.value,
-    //   subject: target.subject.value,
-    //   message: target.message.value,
-    // };
-
     const formData = new FormData(event.target)
-// console.log(formData)
+console.log(formData)
     try {
   
       const response = await fetch('/api', {
@@ -34,8 +18,7 @@ const ContactForm: React.FC = () => {
           throw new Error(`response status: ${response.status}`);
       }
       const responseData = await response.json();
-      console.log(responseData['message'])
-
+      console.log(responseData);
       alert('Message successfully sent');
   } catch (err) {
       console.error(err);
