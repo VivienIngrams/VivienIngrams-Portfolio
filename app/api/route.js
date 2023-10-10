@@ -7,7 +7,6 @@ import nodemailer from "nodemailer";
 export async function POST(request) {
   const username = process.env.USER;
   const password = process.env.PASS;
-  console.log(username, password)
 
   
   try {
@@ -26,8 +25,8 @@ export async function POST(request) {
       secure: true,
       tls : { rejectUnauthorized: false },
       auth: {
-        user: 'vivingrams@gmail.com',
-        pass: 'evqjwlxthajoehgf',
+        user: USER,
+        pass: PASS,
       },
     });
 
