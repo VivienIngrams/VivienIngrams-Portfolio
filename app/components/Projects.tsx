@@ -9,6 +9,7 @@ const Projects: React.FC = () => {
            <ProjectItem title='Research blog' backgroundImg="/assets/Projects/AlexSiteResearch1.png" tech='Next JS' projectUrl='/research-blog' />
            <ProjectItem title='Model Portfolio' backgroundImg="/assets/Projects/KikoSite.png" tech='Next JS' projectUrl='/model-portfolio' />
            <ProjectItem title='Art Facilitation' backgroundImg="/assets/Projects/CelesteSiteWorkshops.png" tech='Wordpress' projectUrl='/art-facilitation' />
+           <ProjectItem title='Landing Page' backgroundImg="/assets/Projects/LandingPage.png" tech='Next JS' projectUrl='/landing-page' />
         </div>
       </div>
     </div>

@@ -2,7 +2,7 @@ import Image from "next/image";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
-const ModelPortfolio: React.FC = () => {
+const LandingPage: React.FC = () => {
     return ( <div className="w-full bg-[#ded8ca] font-raj ">
     <div className="w-screen h-[50vh] relative">
       <div className="absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10" />
@@ -10,11 +10,11 @@ const ModelPortfolio: React.FC = () => {
         className="absolute z-1"
         layout="fill"
         objectFit="cover"
-        src="/assets/Projects/KikoSiteBook.png"
+        src="/assets/Projects/LandingSite.png"
         alt="/"
       />
       <div className="absolute top-[80%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 ">
-        <h2 className="uppercase font-poiret p-2">Model Portfolio</h2>
+        <h2 className="uppercase font-poiret p-2">Landing Page</h2>
       </div>
     </div>
 
@@ -22,17 +22,17 @@ const ModelPortfolio: React.FC = () => {
       <div className="col-span-4 py-4">
 
         <p className="pb-4">
-        Built with Next.js and hosted on Netlify, this web application connects with a MongoDB Cluster to store data. The Firebase SDK is integrated for user authentication, allowing authorized administrators to sign in using their email address and password, creating a secure environment for efficient data management. With input forms authorized users can manage and manipulate data, enabling easy additions, updates, and deletions. 
+        This is a landing page for a local animal grooming service in Porto. This user-friendly SPA is built with React, Next.js, and TypeScript. It includes Google Maps for simple navigation and a contact form for reaching out using to NodeMailer.  Framer Motion is used to add some subtle style and animation, while Tailwind CSS ensures a clean and modern look. The site is hosted on Netlify for reliable access.
         </p>
         <a
-          href="https://github.com/VivienIngrams/Sakiko"
+          href="https://github.com/VivienIngrams/Landing-Page"
           target="_blank"
           rel="noreferrer"
         >
           <button className="px-8 py-2 mt-4 mr-8">Code</button>
         </a>
         <a
-          href="https://sakikooishi.netlify.app"
+          href="https://tosquias.netlify.app"
           target="_blank"
           rel="noreferrer"
         >
@@ -50,16 +50,22 @@ const ModelPortfolio: React.FC = () => {
               <RiRadioButtonFill className="pr-1" /> NextJS
             </p>
             <p className="text-[#E6E3DE] py-2 flex items-center">
-              <RiRadioButtonFill className="pr-1" /> Tailwind CSS
-            </p>
-            <p className="text-[#E6E3DE] py-2 flex items-center">
-              <RiRadioButtonFill className="pr-1" /> Typescript
+              <RiRadioButtonFill className="pr-1" /> Nodemailer
             </p>
             <p className="text-[#E6E3DE] py-2 flex items-center">
               <RiRadioButtonFill className="pr-1" /> Netlify
             </p>
             <p className="text-[#E6E3DE] py-2 flex items-center">
-              <RiRadioButtonFill className="pr-1" /> MongoDB
+              <RiRadioButtonFill className="pr-1" /> Google Map API
+            </p>
+            <p className="text-[#E6E3DE] py-2 flex items-center">
+              <RiRadioButtonFill className="pr-1" /> Framer Motion
+            </p>
+            <p className="text-[#E6E3DE] py-2 flex items-center">
+              <RiRadioButtonFill className="pr-1" /> Tailwind CSS
+            </p>
+            <p className="text-[#E6E3DE] py-2 flex items-center">
+              <RiRadioButtonFill className="pr-1" /> Typescript
             </p>
           </div>
         </div>
@@ -71,4 +77,4 @@ const ModelPortfolio: React.FC = () => {
   </div> );
 }
  
-export default ModelPortfolio;
+export default LandingPage;
