@@ -92,7 +92,7 @@ const SkillsData: Skill[] = [
   },
   {
     id: 12,
-    name: "Google Maps API",
+    name: "Google Maps",
     icon: <SiGooglemaps size={40} />,
     link: "/landing-page",
   },
