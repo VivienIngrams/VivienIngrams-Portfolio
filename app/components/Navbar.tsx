@@ -19,6 +19,9 @@ const NavBar: React.FC = () => {
     if (
       pathname === "/research-blog" ||
       pathname === "/model-portfolio" ||
+      pathname === "/landing-page" ||
+      pathname === "/psychologist" ||
+      pathname === "/photography" ||
       pathname === "/art-facilitation"
     ) {
       setNavBg("#ded8ca");

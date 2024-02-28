@@ -38,7 +38,7 @@ const Contact: React.FC = () => {
               </h3>
               <p className="pt-1 font-pt font-bold text-md">Frontend Web Developer</p>
               <p className="pt-6 font-pt">
-                I am available for part-time work or free-lance projects.
+                I am available for part-time work or freelance projects.
               </p>
               <p className="py-2 font-pt">
                 {" "}

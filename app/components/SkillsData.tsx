@@ -14,6 +14,7 @@ import {
     SiNextdotjs,
     SiGooglemaps,
     SiProtonmail,
+    SiFigma
   } from "react-icons/si";
   
 export interface Skill {
@@ -95,6 +96,12 @@ const SkillsData: Skill[] = [
     name: "Google Maps",
     icon: <SiGooglemaps size={40} />,
     link: "/landing-page",
+  },
+  {
+    id: 12,
+    name: "Figma",
+    icon: <SiFigma size={40} />,
+    link: "/psychologist",
   },
 ];
 
