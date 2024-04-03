@@ -16,14 +16,14 @@ const About: React.FC = () => {
         <div className=" flex flex-col items-center justify-center col-span-2 font-pt">
           <div className=" p-4 tracking-widest uppercase font-poiret font-bold text-3xl">About
           </div>
-          <div className="p-4 py-10 font-pt">
+          <div className="p-4 py-10 font-pt text-justify">
                      From global stages to web pages, I am a versatile professional who has seamlessly merged a dancing career with frontend web development. I combine technical expertise with creative discipline to craft dynamic and captivating web experiences. With a strong foundation in JavaScript, React, and Next.js, my goal is to continue leveraging my diverse background to deliver high-quality digital solutions.          </div>
           <div className="py-10">
             <button onClick={openResume} className="px-8 py-2 ">Resume</button>
           </div>
         </div>
 
-        <div className="md:h-full  px-20 md:p-10 m-auto bg-transparent flex justify-center items-center hover:scale-105 ease-in duration-500">
+        <div className="md:h-full  px-20  md:p-10 m-auto bg-transparent flex justify-center items-center hover:scale-105 ease-in duration-500">
           <Image
             className="border-4 border-[#e5e7eb] shadow-md shadow-gray-400"
             src="/Vivien.jpg"

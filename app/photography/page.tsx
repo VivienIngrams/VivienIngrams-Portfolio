@@ -24,7 +24,7 @@ const Photography: React.FC = () => {
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 py-8">
         <div className="col-span-4 py-4">
           <p className="pb-4">
-            The app was entirely designed for responsivity using Figma. The
+            The app was entirely designed for responsivity using Figma. The site is live since March 2024. The
             logos and favicon were made with Canva. The vertical scrool effect is acheived with the react-horizintal-scroll package. The app was built using Next
             JS and is hosted on Vercel. A Newsletter mailing list. Framer motion is
             used to smoothly animate the texts and page transitions and the splash page.

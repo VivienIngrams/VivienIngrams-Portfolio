@@ -22,7 +22,7 @@ const LandingPage: React.FC = () => {
       <div className="col-span-4 py-4">
 
         <p className="pb-4">
-        This is a landing page for a local animal grooming service in Porto. This user-friendly SPA is built with React, Next.js, and TypeScript. It includes Google Maps for simple navigation and a contact form for reaching out using to NodeMailer.  Framer Motion is used to add some subtle style and animation, while Tailwind CSS ensures a clean and modern look. The site is hosted on Netlify for reliable access.
+        This is a landing page for a local animal grooming service in Porto. This user-friendly SPA is built with React, Next.js, and TypeScript. It includes Google Maps for simple navigation and a contact form for reaching out using to NodeMailer.  Framer Motion is used to add some subtle style and animation, while Tailwind CSS ensures a clean and modern look. The site is hosted since November 2023 on Netlify for reliable access.
         </p>
         <a
           href="https://github.com/VivienIngrams/Landing-Page"

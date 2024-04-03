@@ -22,7 +22,7 @@ const Psychologist: React.FC = () => {
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 py-8">
         <div className="col-span-4 py-4">
           <p className="pb-4">
-            The app was entirely designed for responsivity using Figma. The
+            Published in February 2024, this app was entirely designed for responsivity using Figma. The
             logos and favicon were made with Canva. The app was built using Next
             JS and is hosted on Vercel. A Contact form uses Nodemailer to send
             messages directly from the website to the owner. Framer motion is

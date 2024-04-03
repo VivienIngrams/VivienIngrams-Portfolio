@@ -22,7 +22,7 @@ const ArtFacilitation: React.FC = () => {
       <div className="col-span-4 py-4">
 
         <p className="pb-4">
-        This website, developed using WordPress, Elementor, and CSS, serves as a platform for an art facilitator. It seamlessly blends aesthetics with functionality, providing a canvas for the artist&apos;s work and their exploration of the profound connections between art, health, culture, and human relationships through various mediums.
+        This website, developed using WordPress, Elementor, and CSS, serves as a platform for an art facilitator since April 2023. It seamlessly blends aesthetics with functionality, providing a canvas for the artist&apos;s work and their exploration of the profound connections between art, health, culture, and human relationships through various mediums. The site is being recreated from scratch using Vercel for hosting and Sanity as a headless content management system for easy content updates. 
         </p>
         <a
           href="https://github.com/VivienIngrams"

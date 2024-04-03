@@ -23,7 +23,7 @@ const ResearchBlog: React.FC = () => {
         <div className="col-span-4 py-4">
 
           <p className="pb-4">
-            This app was built using Next JS and is hosted on Vercel. The data is
+            This app was built in September 2023 using Next JS and hosted on Vercel. The data is
             stored in Firebase realtime database. User authentication is
             available through the Firebase SDK. This enable authorised
             administrators to sign in with an email address. Input forms in turn

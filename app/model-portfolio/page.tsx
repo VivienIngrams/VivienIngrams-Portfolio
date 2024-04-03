@@ -22,7 +22,7 @@ const ModelPortfolio: React.FC = () => {
       <div className="col-span-4 py-4">
 
         <p className="pb-4">
-        Built with Next.js and hosted on Netlify, this web application connects with a MongoDB Cluster to store data. The Firebase SDK is integrated for user authentication, allowing authorized administrators to sign in using their email address and password, creating a secure environment for efficient data management. With input forms authorized users can manage and manipulate data, enabling easy additions, updates, and deletions. 
+        Built in July 2023 with Next.js and hosted on Netlify. this web application connects with a MongoDB Cluster to store data. The Firebase SDK is integrated for user authentication, allowing authorized administrators to sign in using their email address and password, creating a secure environment for efficient data management. With input forms authorized users can manage and manipulate data, enabling easy additions, updates, and deletions. 
         </p>
         <a
           href="https://github.com/VivienIngrams/Sakiko"

@@ -19,12 +19,12 @@ interface ProjectItemProps {
         width={800}
       />
       <div className="hidden font-raj group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-        <h4 className="text-2xl font-poiret font-bold uppercase tracking-wider text-white">
+        <h4 className="text-xs md:text-lg lg:text-2xl font-poiret font-bold uppercase tracking-wider text-white">
          {title}
         </h4>
-        <p className="pb-4 pt-2 text-white text-center">{tech}</p>
+        <p className="hidden md:block pb-4 pt-2 text-white text-center">{tech}</p>
         <Link href={projectUrl}>
-          <p className="py-3 bg-white text-slate-600 font-bold text-lg cursor-pointer text-center">
+          <p className="mt-2 p-1 lg:py-3 bg-white text-slate-600 font-bold text-xs md:text-lg cursor-pointer text-center">
             More info
           </p>
         </Link>
