@@ -7,6 +7,7 @@ import {
     IoLogoGithub,
   } from "react-icons/io5";
   import {
+    SiSanity,
     SiCanva,
     SiTailwindcss,
     SiTypescript,
@@ -102,6 +103,12 @@ const SkillsData: Skill[] = [
     name: "Figma",
     icon: <SiFigma className="object-fill h-5 w-5 sm:h-8 sm:w-8 lg:h-12 lg:w-12"/>,
     link: "/psychologist",
+  },
+  {
+    id: 13,
+    name: "Sanity",
+    icon: <SiSanity className="object-fill h-5 w-5 sm:h-8 sm:w-8 lg:h-12 lg:w-12"/>,
+    link: "/bombarda",
   },
 ];
 

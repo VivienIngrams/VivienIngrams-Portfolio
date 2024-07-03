@@ -22,11 +22,11 @@ interface ProjectItemProps {
         <h4 className="text-xs md:text-lg lg:text-2xl font-poiret font-bold uppercase tracking-wider text-white">
          {title}
         </h4>
-        <p className="hidden md:block pb-4 pt-2 text-white text-center">{tech}</p>
+        {/* <p className="hidden md:block pb-4 pt-2 text-white text-center">{tech}</p> */}
         <Link href={projectUrl}>
-          <p className="mt-2 p-1 lg:py-3 bg-white text-slate-600 font-bold text-xs md:text-lg cursor-pointer text-center">
+          <div className="mt-2 p-1  bg-white/50 text-slate-600 font-bold text-xs md:text-lg cursor-pointer text-center">
             More info
-          </p>
+          </div>
         </Link>
       </div>
     </div>

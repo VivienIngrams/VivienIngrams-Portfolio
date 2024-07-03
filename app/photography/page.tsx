@@ -25,7 +25,7 @@ const Photography: React.FC = () => {
         <div className="col-span-4 py-4">
           <p className="pb-4">
             The app was entirely designed for responsivity using Figma. The site is live since March 2024. The
-            logos and favicon were made with Canva. The vertical scrool effect is acheived with the react-horizintal-scroll package. The app was built using Next
+            logos and favicon were made with Canva. The data is hosted in Sanity Content Lake and fully editable by the owners of the site for content updates. The vertical scrool effect is acheived with the react-horizintal-scroll package. The app was built using Next
             JS and is hosted on Vercel. A Newsletter mailing list. Framer motion is
             used to smoothly animate the texts and page transitions and the splash page.
           </p>
@@ -37,7 +37,7 @@ const Photography: React.FC = () => {
             <button className="px-8 py-2 mt-4 mr-8">Code</button>
           </a>
           <a
-            href="https://2regards.com"
+            href="https://2regards.net"
             target="_blank"
             rel="noreferrer"
           >
@@ -59,6 +59,9 @@ const Photography: React.FC = () => {
             <div className="grid grid-cols-3 md:grid-cols-1">
               <p className="text-[#E6E3DE] py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Figma
+              </p>
+              <p className="text-[#E6E3DE] py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" /> Sanity
               </p>
               <p className="text-[#E6E3DE] py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Canva
