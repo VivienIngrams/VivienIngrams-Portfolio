@@ -25,14 +25,14 @@ const Bombarda: React.FC = () => {
         Built in June 2024 with Next.js and hosted on Vercel, this app brings together all of the places of interest in the Bombarda Art District in Porto, Portugal. For ease of use and organisation, the places are seperated into three categories: Art, Food and Drink and Shops. It is also possible to filter throught the different options with tagsso that users can find what they are interested in. The main page also displays a random selection to help users discover new places in the neighbourhood.  Sanity is used as a headless CMS. The app was designed on Figma.
         </p>
         <a
-          href="https://github.com/VivienIngrams/Sakiko"
+          href="https://github.com/VivienIngrams/Bombarda"
           target="_blank"
           rel="noreferrer"
         >
           <button className="px-8 py-2 mt-4 mr-8">Code</button>
         </a>
         <a
-          href="https://https://bombarda-app.vercel.app/"
+          href="https://bombarda-app.vercel.app/"
           target="_blank"
           rel="noreferrer"
         >
