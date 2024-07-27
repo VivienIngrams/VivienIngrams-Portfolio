@@ -5,12 +5,11 @@ import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
-import ContactForm from "./ContactForm"
+import ContactForm from "./ContactForm";
 
 const Contact: React.FC = () => {
-
   return (
-    <div id='contact' className="w-full lg:h-screen font-raj py-20">
+    <div id="contact" className="w-full lg:h-screen font-raj py-20">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <div className=" pb-12 tracking-widest uppercase font-poiret font-bold text-3xl text-center">
           Contact
@@ -33,10 +32,12 @@ const Contact: React.FC = () => {
             </div>
             <div className="m-4 lg:my-12">
               <h3 className="pt-3 font-poiret font-semi-bold text-xl uppercase tracking-wider">
-                <span className="text-4xl font-medium tracking-tighter">V</span>ivien{" "}
-                <span className="text-4xl font-medium">I</span>ngrams
+                <span className="text-4xl font-medium tracking-tighter">V</span>
+                ivien <span className="text-4xl font-medium">I</span>ngrams
               </h3>
-              <p className="pt-1 font-pt font-bold text-md">Frontend Web Developer</p>
+              <p className="pt-1 font-pt font-bold text-md">
+                Frontend Web Developer
+              </p>
               <p className="pt-6 font-pt">
                 I am available for part-time work or freelance projects.
               </p>
@@ -46,34 +47,34 @@ const Contact: React.FC = () => {
               </p>
             </div>
             <div>
-            <div className="flex items-center justify-start p-3">
-            <div className="rounded-full shadow-md shadow-neutral-500 p-2 cursor-pointer hover:scale-105 ease-in duration-300 m-2">
-            <a href="https://www.linkedin.com/in/vivien-ingrams">
-                  <FaLinkedinIn />
-                </a>
-            </div>
-            <div className="rounded-full shadow-md shadow-neutral-500 p-2 cursor-pointer hover:scale-105 ease-in duration-300 m-2">
-            <a href="https://github.com/VivienIngrams">
-                  <FaGithub />
-                </a>
-            </div>
-            <div className="rounded-full shadow-md shadow-neutral-500 p-2 cursor-pointer hover:scale-105 ease-in duration-300 m-2">
-            <a href="mailto:vivieningrams@hotmail.com" target="_blank">
-                  <AiOutlineMail />
-                </a>
-            </div>
-            <div className="rounded-full shadow-md shadow-neutral-500 p-2 cursor-pointer hover:scale-105 ease-in duration-300 m-2">
-            <Link href="/#contact">
-                  <BsFillPersonLinesFill />
-                </Link>
-            </div>
-          </div>
+              <div className="flex items-center justify-start p-3">
+                <div className="rounded-full shadow-md shadow-neutral-500 p-2 cursor-pointer hover:scale-105 ease-in duration-300 m-2">
+                  <a href="https://www.linkedin.com/in/vivien-ingrams">
+                    <FaLinkedinIn />
+                  </a>
+                </div>
+                <div className="rounded-full shadow-md shadow-neutral-500 p-2 cursor-pointer hover:scale-105 ease-in duration-300 m-2">
+                  <a href="https://github.com/VivienIngrams">
+                    <FaGithub />
+                  </a>
+                </div>
+                <div className="rounded-full shadow-md shadow-neutral-500 p-2 cursor-pointer hover:scale-105 ease-in duration-300 m-2">
+                  <a href="mailto:vivieningrams@hotmail.com" target="_blank">
+                    <AiOutlineMail />
+                  </a>
+                </div>
+                <div className="rounded-full shadow-md shadow-neutral-500 p-2 cursor-pointer hover:scale-105 ease-in duration-300 m-2">
+                  <Link href="/#contact">
+                    <BsFillPersonLinesFill />
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
           {/* right */}
           <div className="col-span-3 w-full border-4 border-[#e5e7eb] shadow-md shadow-neutral-500">
             <div className="p-6 bg-[#f3f2ee]">
-            <ContactForm />
+              <ContactForm />
             </div>
           </div>
         </div>
@@ -81,6 +82,7 @@ const Contact: React.FC = () => {
           <Link href="/">
             <div className="rounded-full shadow-md shadow-neutral-500 p-2 cursor-pointer hover:scale-105 ease-in duration-300 m-2">
               <HiOutlineChevronDoubleUp />
+              
             </div>
           </Link>
         </div>
