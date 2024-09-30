@@ -36,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`min-h-screen bg-[#710d02] ${pt.variable} ${raj.variable} ${poiret.variable}`}
+        className={`min-h-screen bg-[#560a01] ${pt.variable} ${raj.variable} ${poiret.variable}`}
       >
         <NavBar />
         

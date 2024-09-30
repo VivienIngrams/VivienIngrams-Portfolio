@@ -14,22 +14,22 @@ const Main = () => {
         </div>
       </div>
       <div className="flex items-center justify-between max-w-[330px] m-auto">
-        <div className="rounded-full bg-red-900 shadow-md shadow-[rgba(219,248,207,0.5)] ml-1 p-2 cursor-pointer hover:scale-105 ease-in duration-300">
+        <div className="rounded-full bg-[rgba(219,248,207,0.1)] shadow-md shadow-[rgba(219,248,207,0.5)] ml-1 p-2 cursor-pointer hover:scale-105 ease-in duration-300">
           <a href="https://www.linkedin.com/in/vivien-ingrams">
             <FaLinkedinIn />
           </a>
         </div>
-        <div className="rounded-full bg-red-900 shadow-md shadow-[rgba(219,248,207,0.5)] p-2 cursor-pointer hover:scale-105 ease-in duration-300">
+        <div className="rounded-full bg-[rgba(219,248,207,0.1)] shadow-md shadow-[rgba(219,248,207,0.5)] p-2 cursor-pointer hover:scale-105 ease-in duration-300">
           <a href="https://github.com/VivienIngrams">
             <FaGithub />
           </a>
         </div>
-        <div className="rounded-full bg-red-900 shadow-md shadow-[rgba(219,248,207,0.5)] p-2 cursor-pointer hover:scale-105 ease-in duration-300">
+        <div className="rounded-full bg-[rgba(219,248,207,0.1)] shadow-md shadow-[rgba(219,248,207,0.5)] p-2 cursor-pointer hover:scale-105 ease-in duration-300">
           <a href="mailto:vivieningrams@hotmail.com" target="_blank">
             <AiOutlineMail />
           </a>
         </div>
-        <div className="rounded-full bg-red-900 shadow-md shadow-[rgba(219,248,207,0.5)] mr-1 p-2 cursor-pointer hover:scale-105 ease-in duration-300">
+        <div className="rounded-full bg-[rgba(219,248,207,0.1)] shadow-md shadow-[rgba(219,248,207,0.5)] mr-1 p-2 cursor-pointer hover:scale-105 ease-in duration-300">
           <Link href="/#contact">
             <BsFillPersonLinesFill />
           </Link>
