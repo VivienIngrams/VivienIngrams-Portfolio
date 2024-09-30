@@ -47,7 +47,7 @@ const NavBar: React.FC = () => {
   return (
     <div 
     style={{backgroundColor: `${navBg}`}}
-      className="fixed w-full h-100 font-poiret font-bold  z-[100]">
+      className="fixed w-full h-100 font-poiret-one font-bold  z-[100]">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
       <div className="relative w-[120px] h-[60px] md:w-[150px] md:h-[70px]"><Link href="/"><Image
           src='/Logo.png'
