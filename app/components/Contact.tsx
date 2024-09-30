@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 
 import { AiOutlineMail } from "react-icons/ai";
@@ -16,17 +16,17 @@ const Contact: React.FC = () => {
         </div>
         {/* left */}
         <div className="grid lg:grid-cols-5 gap-8">
-          <div className="col-span-3 lg:col-span-2 w-full h-full ">
-            <div className="relative border-4 border-[#7f1d1d] hover:scale-105 ease-in duration-300">
+          <div className="col-span-3 lg:col-span-2 w-full h-full  ">
+            <div className="relative hover:scale-105 ease-in duration-300">
               <Image
-                className=""
+                className="object-cover "
                 src="https://images.unsplash.com/photo-1488229297570-58520851e868?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
-                height={500}
-                width={800}
+                height={600}
+                width={700}
                 alt=""
                 priority={false}
               />
-              <div className=" font-bold text-xl absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+              <div className="uppercase font-bold text-xl absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
                 <p>Get in touch</p>
               </div>
             </div>

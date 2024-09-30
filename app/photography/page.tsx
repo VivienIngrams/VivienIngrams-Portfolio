@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
@@ -57,35 +57,35 @@ const Photography: React.FC = () => {
               Technologies
             </p>
             <div className="grid grid-cols-3 md:grid-cols-1">
-              <p className="text-[#E6E3DE] py-2 flex items-center">
+              <p className="text-[#E6E3DE] py-1 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Figma
               </p>
-              <p className="text-[#E6E3DE] py-2 flex items-center">
+              <p className="text-[#E6E3DE] py-1 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Sanity
               </p>
-              <p className="text-[#E6E3DE] py-2 flex items-center">
+              <p className="text-[#E6E3DE] py-1 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Canva
               </p>
-              <p className="text-[#E6E3DE] py-2 flex items-center">
+              <p className="text-[#E6E3DE] py-1 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> React
               </p>
-              <p className="text-[#E6E3DE] py-2 flex items-center">
+              <p className="text-[#E6E3DE] py-1 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> NextJS
               </p>
-              <p className="text-[#E6E3DE] py-2 flex items-center">
+              <p className="text-[#E6E3DE] py-1 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Tailwind CSS
               </p>
-              <p className="text-[#E6E3DE] py-2 flex items-center">
+              <p className="text-[#E6E3DE] py-1 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Typescript
               </p>
-              <p className="text-[#E6E3DE] py-2 flex items-center">
+              <p className="text-[#E6E3DE] py-1 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Vercel
               </p>
             </div>
           </div>
         </div>
         <Link href="/#projects">
-          <p className="uppercase font-poiret font-bold cursor-pointer">
+          <p className=" -mt-16 uppercase font-poiret font-bold cursor-pointer">
             {" "}
             - Back
           </p>

@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 
 interface ProjectItemProps {
@@ -24,7 +24,7 @@ interface ProjectItemProps {
         </h4>
         {/* <p className="hidden md:block pb-4 pt-2 text-white text-center">{tech}</p> */}
         <Link href={projectUrl}>
-          <div className="mt-2 p-1  bg-white/50 text-slate-600 font-bold text-xs md:text-lg cursor-pointer text-center">
+          <div className="mt-2 p-2  bg-white/50 text-slate-600 font-bold text-xs md:text-md cursor-pointer text-center">
             More info
           </div>
         </Link>

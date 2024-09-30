@@ -1,6 +1,6 @@
 'use client'
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 const openResume = () => {
   window.open("cv.pdf", "_blank");
@@ -25,7 +25,7 @@ const About: React.FC = () => {
 
         <div className="md:h-full  px-20  md:p-10 m-auto bg-transparent flex justify-center items-center hover:scale-105 ease-in duration-500">
           <Image
-            className="border-4 border-[#e5e7eb] shadow-md shadow-gray-400"
+            className="border-4 border-[#e5e7eb] object-contain shadow-md shadow-gray-400"
             src="/Vivien.jpg"
             width={200}
             height={400}

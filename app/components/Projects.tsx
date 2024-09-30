@@ -6,7 +6,7 @@ const Projects: React.FC = () => {
       <div className="max-w-[1240px] mx-auto px-2 py-4">
         <p className="mb-16 text-center font-poiret font-bold text-3xl uppercase tracking-widest">Projects</p>
         <div className="grid lg:grid-cols-2 gap-8">
-           <ProjectItem title='Art Photography' backgroundImg="/assets/Projects/mathilde.png" tech='Next JS' projectUrl='/mathilde' />
+           <ProjectItem title='Art Photography' backgroundImg="/assets/Projects/mathilde1.png" tech='Next JS' projectUrl='/mathilde' />
            <ProjectItem title='Art District App' backgroundImg="/assets/Projects/bombarda.png" tech='Next JS' projectUrl='/bombarda' />
            <ProjectItem title='Photography and art gallery' backgroundImg="/assets/Projects/2regards.png" tech='Next JS' projectUrl='/photography' />
            <ProjectItem title='Psychologist&apos;s professional website' backgroundImg="/assets/Projects/Marta.png" tech='Next JS' projectUrl='/psychologist' />
