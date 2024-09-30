@@ -14,8 +14,8 @@ interface ProjectItemProps {
       <Image
         className=" group-hover:opacity-20"
         src={backgroundImg}
-        alt="Alex's website"
-        height={500}
+        alt="Website project"
+        height={400}
         width={800}
       />
       <div className="hidden font-raj group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
