@@ -10,7 +10,7 @@ interface ProjectItemProps {
   
   const ProjectItem: React.FC<ProjectItemProps> = ({ title, backgroundImg, tech, projectUrl}) => {
   return (
-    <div className="relative flex item-center justify-center h-auto w-full shadow-md shadow-gray-400 border-4 border-[#e5e7eb] group hover:bg-gradient-to-r from-[black] to-red-800">
+    <div className="relative flex item-center justify-center h-auto w-full shadow-md shadow-stone-400 border-4 border-stone-400 group hover:bg-gradient-to-r from-[black] to-red-800">
       <Image
         className=" group-hover:opacity-20"
         src={backgroundImg}

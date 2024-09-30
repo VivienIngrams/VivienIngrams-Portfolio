@@ -31,7 +31,7 @@ const NavBar: React.FC = () => {
       setNavBg("transparent");
         const handleNavBg = () => {
       if (window.scrollY >= 400) {
-        setNavBg("rgba(222, 216, 202, 0.5)")
+        setNavBg("rgba(223,206,206,0.5)")
       } else {
         setNavBg('transparent')
       }
@@ -49,7 +49,7 @@ const NavBar: React.FC = () => {
   return (
     <div 
     style={{backgroundColor: `${navBg}`}}
-      className="fixed w-full h-100 font-poiret font-bold  z-[100]">
+      className="fixed w-full h-100 font-poiret font-bold text-red-900 z-[100]">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
       <div className="relative w-[120px] h-[60px] md:w-[150px] md:h-[70px]"><Link href="/"><Image
           src='/Logo.png'
@@ -62,21 +62,21 @@ const NavBar: React.FC = () => {
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
+              <li className="ml-10 text-base uppercase hover:border-b ">Home</li>
             </Link>
             <Link href="/#about">
-              <li className="ml-10 text-sm uppercase hover:border-b">About</li>
+              <li className="ml-10 text-base uppercase hover:border-b">About</li>
             </Link>
             <Link href="/#skills">
-              <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
+              <li className="ml-10 text-base uppercase hover:border-b">Skills</li>
             </Link>
             <Link href="/#projects">
-              <li className="ml-10 text-sm uppercase hover:border-b">
+              <li className="ml-10 text-base uppercase hover:border-b">
                 Projects
               </li>
             </Link>
             <Link href="/#contact">
-              <li className="ml-10 text-sm uppercase hover:border-b">
+              <li className="ml-10 text-base uppercase hover:border-b">
                 Contact
               </li>
             </Link>
@@ -162,22 +162,22 @@ const NavBar: React.FC = () => {
               </Link>
             </ul>
             <div className="pt-40 flex items-center justify-between my-4 w-full sm:w-[80%]">
-              <div className="rounded-full shadow-md shadow-neutral-500 p-2  cursor-pointer hover:scale-105 ease-in duration-300">
+              <div className="rounded-full shadow-md shadow-stone-400 p-2  cursor-pointer hover:scale-105 ease-in duration-300">
                 <a href="https://www.linkedin.com/in/vivien-ingrams">
                   <FaLinkedinIn onClick={handleNav} />
                 </a>
               </div>
-              <div className="rounded-full shadow-md shadow-neutral-500 p-2  cursor-pointer hover:scale-105 ease-in duration-300">
+              <div className="rounded-full shadow-md shadow-stone-400 p-2  cursor-pointer hover:scale-105 ease-in duration-300">
                 <a href="https://github.com/VivienIngrams">
                   <FaGithub onClick={handleNav} />
                 </a>
               </div>
-              <div className="rounded-full shadow-md shadow-neutral-500 p-2  cursor-pointer hover:scale-105 ease-in duration-300">
+              <div className="rounded-full shadow-md shadow-stone-400 p-2  cursor-pointer hover:scale-105 ease-in duration-300">
                 <a href="mailto:vivieningrams@hotmail.com" target="_blank">
                   <AiOutlineMail onClick={handleNav} />
                 </a>
               </div>
-              <div className="rounded-full shadow-md shadow-neutral-500 p-2  cursor-pointer hover:scale-105 ease-in duration-300">
+              <div className="rounded-full shadow-md shadow-stone-400 p-2  cursor-pointer hover:scale-105 ease-in duration-300">
                 <Link href="/#contact">
                   <BsFillPersonLinesFill onClick={handleNav} />
                 </Link>

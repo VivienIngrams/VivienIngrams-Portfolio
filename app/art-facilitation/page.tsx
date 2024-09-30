@@ -3,7 +3,7 @@ import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
 const ArtFacilitation: React.FC = () => {
-    return ( <div className="w-full bg-[#ded8ca] font-raj ">
+    return ( <div className="w-full bg-[#ded8ca] font-raj min-h-[95vh]">
     <div className="w-screen h-[50vh] relative">
       <div className="absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10" />
       <Image
@@ -29,17 +29,17 @@ const ArtFacilitation: React.FC = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <button className="px-8 py-2 mt-4 mr-8">Code</button>
+          <button className="px-8 py-2 mt-4 mr-8 text-red-800">Code</button>
         </a>
         <a
           href="https://celesteingrams.com"
           target="_blank"
           rel="noreferrer"
         >
-          <button className="px-8 py-2 mt-4">Demo</button>
+          <button className="px-8 py-2 mt-4 text-red-800">Demo</button>
         </a>
       </div>
-      <div className="col-span-4 md:col-span-1 uppercase bg-gradient-to-r from-[rgba(174,36,36,0.92)] to-[#842f0b] shadow-xl shadow-gray-400 py-4">
+      <div className="col-span-4 md:col-span-1 uppercase bg-gradient-to-r from-[rgba(174,36,36,0.92)] to-[#842f0b] shadow-xl shadow-stone-400 py-4">
         <div className="p-2">
           <p className="text-center text-[#E6E3DE] font-poiret font-bold uppercase tracking-widest pb-2">Technologies</p>
           <div className="grid grid-cols-3 md:grid-cols-1">
@@ -56,7 +56,7 @@ const ArtFacilitation: React.FC = () => {
         </div>
       </div>
       <Link href="/#projects">
-        <p className="uppercase font-poiret font-bold cursor-pointer -mt-16"> - Back</p>
+        <p className="uppercase font-poiret font-bold cursor-pointer"> - Back</p>
       </Link>
     </div>
   </div> );

@@ -48,22 +48,22 @@ const Contact: React.FC = () => {
             </div>
             <div>
               <div className="flex items-center justify-start p-3">
-                <div className="rounded-full shadow-md shadow-neutral-500 p-2 cursor-pointer hover:scale-105 ease-in duration-300 m-2">
+                <div className="rounded-full shadow-md shadow-stone-400 p-2 cursor-pointer hover:scale-105 ease-in duration-300 m-2">
                   <a href="https://www.linkedin.com/in/vivien-ingrams">
                     <FaLinkedinIn />
                   </a>
                 </div>
-                <div className="rounded-full shadow-md shadow-neutral-500 p-2 cursor-pointer hover:scale-105 ease-in duration-300 m-2">
+                <div className="rounded-full shadow-md shadow-stone-400 p-2 cursor-pointer hover:scale-105 ease-in duration-300 m-2">
                   <a href="https://github.com/VivienIngrams">
                     <FaGithub />
                   </a>
                 </div>
-                <div className="rounded-full shadow-md shadow-neutral-500 p-2 cursor-pointer hover:scale-105 ease-in duration-300 m-2">
+                <div className="rounded-full shadow-md shadow-stone-400 p-2 cursor-pointer hover:scale-105 ease-in duration-300 m-2">
                   <a href="mailto:vivieningrams@hotmail.com" target="_blank">
                     <AiOutlineMail />
                   </a>
                 </div>
-                <div className="rounded-full shadow-md shadow-neutral-500 p-2 cursor-pointer hover:scale-105 ease-in duration-300 m-2">
+                <div className="rounded-full shadow-md shadow-stone-400 p-2 cursor-pointer hover:scale-105 ease-in duration-300 m-2">
                   <Link href="/#contact">
                     <BsFillPersonLinesFill />
                   </Link>
@@ -72,15 +72,15 @@ const Contact: React.FC = () => {
             </div>
           </div>
           {/* right */}
-          <div className="col-span-3 w-full border-4 border-[#e5e7eb] shadow-md shadow-neutral-500">
-            <div className="p-6 bg-[#f3f2ee]">
+          <div className="col-span-3 w-full ">
+            <div className="p-6 ">
               <ContactForm />
             </div>
           </div>
         </div>
         <div className="flex justify-center py-12 ">
           <Link href="/">
-            <div className="rounded-full shadow-md shadow-neutral-500 p-2 cursor-pointer hover:scale-105 ease-in duration-300 m-2">
+            <div className="rounded-full shadow-md shadow-stone-400 p-2 cursor-pointer hover:scale-105 ease-in duration-300 m-2">
               <HiOutlineChevronDoubleUp />
               
             </div>

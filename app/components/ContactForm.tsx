@@ -26,7 +26,7 @@ console.log(formData)
   }
   }
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="">
       <div className="grid md:grid-cols-2 gap-4 w-full py-2">
         <div className="flex flex-col">
           <label htmlFor="name" className="uppercase text-sm py-2">
@@ -39,7 +39,7 @@ console.log(formData)
             required
             minLength={3}
             maxLength={150}
-            className="border-2  rounded border-neutral-300 p-3"
+            className="border-2  rounded border-stone-400 p-3"
             type="text"
           />
         </div>
@@ -53,7 +53,7 @@ console.log(formData)
             autoComplete="off"
             minLength={9}
             maxLength={20}
-            className="border-2  rounded border-neutral-300 p-3"
+            className="border-2  rounded border-stone-400 p-3"
             type="text"
           />
         </div>
@@ -69,7 +69,7 @@ console.log(formData)
           required
           minLength={8}
           maxLength={150}
-          className="border-2  rounded border-neutral-300 p-3"
+          className="border-2  rounded border-stone-400 p-3"
           type="email"
         />
       </div>
@@ -81,7 +81,7 @@ console.log(formData)
           id="subject"
           name="subject"
           autoComplete="off"
-          className="border-2  rounded border-neutral-300 p-3"
+          className="border-2  rounded border-stone-400 p-3"
           type="text"
         />
       </div>
@@ -96,11 +96,11 @@ console.log(formData)
           required
           minLength={20}
           maxLength={600}
-          className="border-2 rounded border-neutral-300 p-3"
+          className="border-2 rounded border-stone-400 p-3"
           rows={10}
         />
       </div>
-      <button type="submit" className="w-full p-4 mt-4 text shadow-md text-orange-50 shadow-gray-400  uppercase bg-gradient-to-r from-[#991b1b] to-[#9a3412]">
+      <button type="submit" className="w-full p-4 mt-4 shadow-md text-stone-400 shadow-stone-400  uppercase bg-[#830b0b] ">
         Send Message
       </button>
     </form>

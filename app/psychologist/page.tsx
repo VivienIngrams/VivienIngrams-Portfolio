@@ -33,24 +33,24 @@ const Psychologist: React.FC = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <button className="px-8 py-2 mt-4 mr-8">Code</button>
+            <button className="px-8 py-2 mt-4 mr-8 text-red-800">Code</button>
           </a>
           <a
             href="https://martaguimaraes.vercel.app"
             target="_blank"
             rel="noreferrer"
           >
-            <button className="px-8 py-2 mt-4 mr-8">Demo</button>
+            <button className="px-8 py-2 mt-4 mr-8 text-red-800">Demo</button>
           </a>
           <a
             href="https://www.figma.com/file/oTmhGdpyNQcQfarDel5v17/Marta?type=design&node-id=180%3A387&mode=design&t=OZTTr5HaXXiQlgHe-1"
             target="_blank"
             rel="noreferrer"
           >
-            <button className="px-8 py-2 mt-4">Design</button>
+            <button className="px-8 py-2 mt-4 text-red-800">Design</button>
           </a>
         </div>
-        <div className="col-span-4 md:col-span-1 uppercase bg-gradient-to-r from-[rgba(174,36,36,0.92)] to-[#842f0b] shadow-md shadow-gray-400 py-4">
+        <div className="col-span-4 md:col-span-1 uppercase bg-gradient-to-r from-[rgba(174,36,36,0.92)] to-[#842f0b] shadow-md shadow-stone-400 py-4">
           <div className="p-2">
             <p className="text-center text-[#E6E3DE] font-poiret font-bold uppercase tracking-widest pb-2">
               Technologies
@@ -81,7 +81,7 @@ const Psychologist: React.FC = () => {
           </div>
         </div>
         <Link href="/#projects">
-          <p className="uppercase font-poiret font-bold cursor-pointer">
+          <p className="-mt-16 uppercase font-poiret font-bold cursor-pointer">
             {" "}
             - Back
           </p>
