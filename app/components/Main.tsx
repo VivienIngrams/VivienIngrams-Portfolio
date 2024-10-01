@@ -8,7 +8,7 @@ const Main = () => {
     <div id="home" className="z-[2] w-full h-screen ">
       <div className="h-[90%] flex items-center justify-center text-center">
         <div className="max-w-[1240px] p-2">
-          <div className=" text-xl font-raj tracking-widest text-stone-300 mt-5">
+          <div className=" text-2xl font-raj tracking-widest text-stone-300 mt-5">
             <p> Coding with Creativity for Dynamic Web Experiences</p>
           </div>
         </div>

@@ -17,7 +17,7 @@ const Contact: React.FC = () => {
         {/* left */}
         <div className="grid lg:grid-cols-5 gap-8">
           <div className="col-span-3 lg:col-span-2 w-full h-full  ">
-            <div className="relative -pb-4 border-4 border-[rgba(219,248,207,0.1)] bg-[rgba(219,248,207,0.2)]  hover:scale-105 ease-in duration-300">
+            <div className="relative  hover:scale-105 ease-in duration-300">
               <Image
                 className="object-cover "
                 src="https://images.unsplash.com/photo-1488229297570-58520851e868?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
@@ -26,7 +26,7 @@ const Contact: React.FC = () => {
                 alt=""
                 priority={false}
               />
-              <div className="uppercase font-bold text-xl absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+              <div className="uppercase text-red-900 font-bold text-xl absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
                 <p>Get in touch</p>
               </div>
             </div>
