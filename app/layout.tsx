@@ -38,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`min-h-screen bg-[#410701] ${pt.variable} ${raj.variable} ${poiret.variable}`}
+        className={`min-h-screen bg-[#2d0909] ${pt.variable} ${raj.variable} ${poiret.variable}`}
       >
         <NavBar />
         <Image
@@ -48,7 +48,7 @@ export default function RootLayout({
           height={1500}
           alt="Sand"
         />
-        <div className="absolute top-0 left-0 w-full min-h-screen bg-cover bg-gradient-to-b from-[rgba(252,220,172,0.6)] via-[rgba(122,98,52,0.5)] to-[#572413] h-full"></div>
+        <div className="absolute top-0 left-0 w-full min-h-screen bg-cover bg-gradient-to-b from-[rgba(254,244,230,0.8)] via-[rgba(122,98,52,0.5)] to-[#522112] h-full"></div>
         <main className="relative">{children}</main>
       </body>
     </html>
