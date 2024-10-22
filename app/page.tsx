@@ -12,9 +12,9 @@ const Home: React.FC<HomeProps> = () => {
   return (
     <>
       <Main />
+      <Projects />
       <About />
       <Skills />
-      <Projects />
       <Contact />
     </>
   );

@@ -10,7 +10,7 @@ const About: React.FC = () => {
   return (
     <div
       id="about"
-      className="w-full min-h-[75vh] p-2 flex items-center py-16 mb-20 bg-gradient-to-b from-[#522112]  via-transparent to-transparent "
+      className="w-full min-h-[75vh] p-2 flex items-center py-16 mb-20  "
     >
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className=" flex flex-col items-center justify-center col-span-2 font-pt">
