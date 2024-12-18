@@ -17,7 +17,7 @@ const Contact: React.FC = () => {
         {/* left */}
         <div className="grid lg:grid-cols-5 gap-8">
           <div className="col-span-3 lg:col-span-2 w-full h-full  ">
-            <div className="relative pt-12 px-4 hover:scale-105 ease-in duration-300">
+            {/* <div className="relative pt-12 px-4 hover:scale-105 ease-in duration-300">
               <Image
                 className="object-cover "
                 src="https://images.unsplash.com/photo-1488229297570-58520851e868?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
@@ -29,9 +29,9 @@ const Contact: React.FC = () => {
               <div className="uppercase mt-6 text-red-900 font-bold text-xl absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
                 <p>Get in touch</p>
               </div>
-            </div>
-            <div className="m-4 lg:my-12">
-              <h3 className="pt-3 font-poiret font-semi-bold text-xl uppercase tracking-wider">
+            </div> */}
+            <div className="m-4 lg:my-16">
+              <h3 className="pt-3 md:pt-12 font-poiret font-semibold text-xl uppercase tracking-wider">
                 <span className="text-4xl font-medium tracking-tighter">V</span>
                 ivien <span className="text-4xl font-medium">I</span>ngrams
               </h3>

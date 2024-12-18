@@ -20,23 +20,40 @@ export const projects = [
       "https://www.figma.com/file/stff81bEWbHdr8KgWwGetb/2regards?type=design",
   },
   {
-    slug: 'mathilde',
-    title: 'Mathilde Cudeville, photographe',
+    slug: "mathilde",
+    title: "Mathilde Cudeville, photographe",
     description: `Built in September 2024 with Next.js and hosted on Vercel, this app showcases the artistic projects of the French photographer Mathilde Cudeville. Sanity is used as a headless CMS. The app was designed on Figma.`,
-    imgUrl: '/assets/Projects/mathilde.png',
-    technologies: ['Typescript', 'Vercel', 'Sanity', 'Figma', 'React', 'NextJS', 'Tailwind CSS'],
-    githubUrl: 'https://github.com/VivienIngrams/Mathilde',
-    demoUrl: 'https://mathildecudeville.com/',
-    designUrl: 'https://www.figma.com/file/stff81bEWbHdr8KgWwGetb/2regards?type=design&node-id=503%3A441&mode=design&t=SPvNx0u1ND4oCBST-1',
+    imgUrl: "/assets/Projects/mathilde.png",
+    technologies: [
+      "Typescript",
+      "Vercel",
+      "Sanity",
+      "Figma",
+      "React",
+      "NextJS",
+      "Tailwind CSS",
+    ],
+    githubUrl: "https://github.com/VivienIngrams/Mathilde",
+    demoUrl: "https://mathildecudeville.com/",
+    designUrl:
+      "https://www.figma.com/file/stff81bEWbHdr8KgWwGetb/2regards?type=design&node-id=503%3A441&mode=design&t=SPvNx0u1ND4oCBST-1",
   },
   {
-    slug: 'model-portfolio',
-    title: 'Model Portfolio',
+    slug: "model-portfolio",
+    title: "Model Portfolio",
     description: `Built in July 2023 with Next.js and hosted on Netlify, this web application connects with a MongoDB Cluster to store data. The Firebase SDK is integrated for user authentication, allowing authorized administrators to sign in using their email address and password, creating a secure environment for efficient data management. With input forms, authorized users can manage and manipulate data, enabling easy additions, updates, and deletions.`,
-    imgUrl: '/assets/Projects/KikoSiteBook.png',
-    technologies: ['React', 'NextJS', 'Tailwind CSS', 'Typescript', 'Netlify', 'MongoDB', 'Firebase'],
-    githubUrl: 'https://github.com/VivienIngrams/Sakiko',
-    demoUrl: 'https://sakiko-oishi.vercel.app/',
+    imgUrl: "/assets/Projects/KikoSiteBook.png",
+    technologies: [
+      "React",
+      "NextJS",
+      "Tailwind CSS",
+      "Typescript",
+      "Netlify",
+      "MongoDB",
+      "Firebase",
+    ],
+    githubUrl: "https://github.com/VivienIngrams/Sakiko",
+    demoUrl: "https://sakiko-oishi.vercel.app/",
   },
   {
     slug: "psychologist",
@@ -74,13 +91,22 @@ export const projects = [
     demoUrl: "https://alex-ingrams.vercel.app",
   },
   {
-    slug: 'landing-page',
-    title: 'Landing Page',
+    slug: "landing-page",
+    title: "Landing Page",
     description: `This is a landing page for a local animal grooming service in Porto. This user-friendly SPA is built with React, Next.js, and TypeScript. It includes Google Maps for simple navigation and a contact form for reaching out using Nodemailer. Framer Motion is used to add some subtle style and animation, while Tailwind CSS ensures a clean and modern look. The site is hosted since November 2023 on Netlify for reliable access.`,
-    imgUrl: '/assets/Projects/LandingSite.png',
-    technologies: ['React', 'NextJS', 'Nodemailer', 'Netlify', 'Google Map API', 'Framer Motion', 'Tailwind CSS', 'Typescript'],
-    githubUrl: 'https://github.com/VivienIngrams/Landing-Page',
-    demoUrl: 'https://tosquias.netlify.app',
+    imgUrl: "/assets/Projects/LandingSite.png",
+    technologies: [
+      "React",
+      "NextJS",
+      "Nodemailer",
+      "Netlify",
+      "Google Map API",
+      "Framer Motion",
+      "Tailwind CSS",
+      "Typescript",
+    ],
+    githubUrl: "https://github.com/VivienIngrams/Landing-Page",
+    demoUrl: "https://tosquias.netlify.app",
   },
   {
     slug: "art-facilitation",
@@ -113,8 +139,10 @@ export const projects = [
   {
     slug: "ne",
     title: "Media Art Research",
-    description: `Built in with Next.js and hosted on Vercel, this app ...`,
-    imgUrl: "/assets/Projects/ne1.png",
+    description: `This app, developed using Next.js and hosted on Vercel, serves as a dynamic platform for a media art and choreography research project. Built with TypeScript, React, and Tailwind CSS, it provides a seamless user experience.
+Sanity is used as the headless CMS, offering flexibility and ease of content management, ensuring that updates can be made efficiently. The website is designed to showcase the collaborative research projects and articles of Né Barros and João Martinho Moura.
+`,
+    imgUrl: "/assets/Projects/ne2.png",
     technologies: [
       "Typescript",
       "Vercel",
@@ -129,7 +157,11 @@ export const projects = [
   {
     slug: "joel",
     title: "Photographer",
-    description: `Built in with Next.js and hosted on Vercel, this app ...`,
+    description: `This professional portfolio website for a photographer was built with Next.js and hosted on Vercel, combining modern web development technologies with an elegant and user-friendly design. TypeScript, React, and Tailwind CSS ensure a responsive interface, delivering a smooth browsing experience.
+
+The site is powered by Sanity as a headless CMS, allowing the photographer to manage and update content effortlessly. It showcases galleries of their work, categorized for easy navigation.
+
+Designed with a focus on aesthetics and functionality, this website beautifully highlights the photographer’s artistic vision and serves as a key tool for connecting with their audience and clients.`,
     imgUrl: "/assets/Projects/joel1.png",
     technologies: [
       "Typescript",
