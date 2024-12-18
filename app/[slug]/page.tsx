@@ -47,24 +47,24 @@ const ProjectPage: React.FC<Props> = ({ params }: Props) => {
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 py-8">
         <div className="col-span-4 py-4">
           <p className="text-red-900 pb-4">{project.description}</p>
-          <div className="flex justify-around md:max-w-[20vw] md:justify-between">
+          <div className="flex justify-around md:max-w-[20vw] md:justify-between text-orange-50">
             {project.githubUrl && (
               <a href={project.githubUrl} target="_blank" rel="noreferrer">
-                <button className=" bg-[#ded8ca] px-6 py-2 mt-4 text-red-800">
+                <button className="  px-6 py-2 mt-4 ">
                   Code
                 </button>
               </a>
             )}
             {project.demoUrl && (
               <a href={project.demoUrl} target="_blank" rel="noreferrer">
-                <button className=" bg-[#ded8ca] px-6 py-2 mt-4  text-red-800">
+                <button className="  px-6 py-2 mt-4  ">
                   Demo
                 </button>
               </a>
             )}
             {project.designUrl && (
               <a href={project.designUrl} target="_blank" rel="noreferrer">
-                <button className=" bg-[#ded8ca] px-6 py-2 mt-4 text-red-800">
+                <button className=" px-6 py-2 mt-4 ">
                   Design
                 </button>
               </a>

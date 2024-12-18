@@ -8,7 +8,7 @@ html {
 
 @layer base {
   body {
-    @apply text-stone-400 tracking-wide
+    @apply  text-[#991b1b] tracking-wide
   }
 /* 
   h1, h2, h3, h4, h5, h6 {
@@ -26,8 +26,7 @@ html {
     @apply cursor-pointer    
   }
   button {
-    @apply shadow-md text-stone-400 shadow-stone-400  uppercase bg-[rgba(219,248,207,0.1)] 
-  }
+    @apply shadow-md text-orange-50 shadow-gray-400  uppercase bg-gradient-to-r from-[#991b1b] to-[#9a3412]  }
   
 }
 

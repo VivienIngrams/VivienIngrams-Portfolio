@@ -31,7 +31,7 @@ const NavBar: React.FC = () => {
       setNavBg("transparent");
         const handleNavBg = () => {
       if (window.scrollY >= 400) {
-        setNavBg("rgba(223,206,206,0.5)")
+        setNavBg("rgba(222,216,202,0.5)")
       } else {
         setNavBg('transparent')
       }
@@ -50,7 +50,7 @@ const NavBar: React.FC = () => {
     <div 
     style={{backgroundColor: `${navBg}`}}
       className="fixed w-full h-100 font-poiret font-bold text-red-900 z-[100]">
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
+      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-8 md:pt-2">
       <div className="relative w-[120px] h-[60px] md:w-[150px] md:h-[70px]"><Link href="/"><Image
           src='/Logo.png'
           alt="Vivien logo"

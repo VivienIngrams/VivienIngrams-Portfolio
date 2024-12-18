@@ -110,4 +110,36 @@ export const projects = [
     designUrl:
       "https://www.figma.com/design/NgxKSrPCzHglqWXHGAgRxd/Bombarda-Digital-Lab?node-id=1625-3626&t=J5jfEZI2K7L9M6rZ-1",
   },
+  {
+    slug: "ne",
+    title: "Media Art Research",
+    description: `Built in with Next.js and hosted on Vercel, this app ...`,
+    imgUrl: "/assets/Projects/ne1.png",
+    technologies: [
+      "Typescript",
+      "Vercel",
+      "Sanity",
+      "React",
+      "NextJS",
+      "Tailwind CSS",
+    ],
+    githubUrl: "https://github.com/VivienIngrams/ne-joao",
+    demoUrl: "https://labio.pt/",
+  },
+  {
+    slug: "joel",
+    title: "Photographer",
+    description: `Built in with Next.js and hosted on Vercel, this app ...`,
+    imgUrl: "/assets/Projects/joel1.png",
+    technologies: [
+      "Typescript",
+      "Vercel",
+      "Sanity",
+      "React",
+      "NextJS",
+      "Tailwind CSS",
+    ],
+    githubUrl: "https://github.com/VivienIngrams/joel",
+    demoUrl: "https://labio.pt/",
+  },
 ];
