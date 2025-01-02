@@ -4,9 +4,9 @@ const Projects: React.FC = () => {
   return (
     <div id='projects' className="w-full py-24 bg-gradient-to-b from-[#cec8ba]
     
-"    >  <div className="max-w-[1240px] mx-auto px-2 py-4">
-        <p className="mb-16 text-center font-poiret font-bold text-3xl uppercase tracking-widest">Projects</p>
-        <div className="grid lg:grid-cols-2 gap-8">
+"    >  <div className="max-w-[1240px] mx-auto px-4 py-4">
+        <p className="mb-16 text-center font-poiret font-bold text-3xl md:text-4xl uppercase tracking-widest">Projects</p>
+        <div className="grid lg:grid-cols-2 gap-4 md:gap-8">
            <ProjectItem title='Media Art Research' backgroundImg="/assets/Projects/ne.png" tech='Next JS' projectUrl='/ne' />
            <ProjectItem title='Photographer' backgroundImg="/assets/Projects/joel.png" tech='Next JS' projectUrl='/joel' />
            <ProjectItem title='Art Photography' backgroundImg="/assets/Projects/mathilde1.png" tech='Next JS' projectUrl='/mathilde' />

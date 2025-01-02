@@ -100,7 +100,7 @@ console.log(formData)
           rows={10}
         />
       </div>
-      <button type="submit" className="w-full p-4 mt-4 shadow-md text-stone-400 shadow-stone-400  uppercase bg-[rgba(219,248,207,0.1)] ">
+      <button type="submit" className="w-full px-8 py-2 mt-4 shadow-md  shadow-stone-400 border-2 rounded border-stone-400  uppercase bg-[rgba(219,248,207,0.1)] ">
         Send Message
       </button>
     </form>
