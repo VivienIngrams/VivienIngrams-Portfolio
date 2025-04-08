@@ -115,7 +115,7 @@ export const projects = [
     imgUrl: "/assets/Projects/CelesteSite.png",
     technologies: ["Wordpress", "Elementor", "CSS", "HTML", "Vercel", "Sanity"],
     githubUrl: "https://github.com/VivienIngrams",
-    demoUrl: "https://celesteingrams.com",
+    demoUrl: "https://celesteburrherrera.com",
   },
   {
     slug: "bombarda",

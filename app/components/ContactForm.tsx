@@ -26,8 +26,8 @@ console.log(formData)
   }
   }
   return (
-    <form onSubmit={handleSubmit} className="">
-      <div className="grid md:grid-cols-2 gap-4 w-full py-2">
+    <form onSubmit={handleSubmit} className="lg:p-6">
+      <div className="grid md:grid-cols-2 gap-4 w-full py-2 ">
         <div className="flex flex-col">
           <label htmlFor="name" className="uppercase text-sm py-2">
             Name
@@ -39,7 +39,7 @@ console.log(formData)
             required
             minLength={3}
             maxLength={150}
-            className="border-2  rounded border-stone-400 p-3"
+            className="border-2  rounded border-stone-400 p-2"
             type="text"
           />
         </div>
@@ -53,7 +53,7 @@ console.log(formData)
             autoComplete="off"
             minLength={9}
             maxLength={20}
-            className="border-2  rounded border-stone-400 p-3"
+            className="border-2  rounded border-stone-400 p-2"
             type="text"
           />
         </div>
@@ -69,7 +69,7 @@ console.log(formData)
           required
           minLength={8}
           maxLength={150}
-          className="border-2  rounded border-stone-400 p-3"
+          className="border-2  rounded border-stone-400 p-2"
           type="email"
         />
       </div>
@@ -81,7 +81,7 @@ console.log(formData)
           id="subject"
           name="subject"
           autoComplete="off"
-          className="border-2  rounded border-stone-400 p-3"
+          className="border-2  rounded border-stone-400 p-2"
           type="text"
         />
       </div>
@@ -96,11 +96,11 @@ console.log(formData)
           required
           minLength={20}
           maxLength={600}
-          className="border-2 rounded border-stone-400 p-3"
-          rows={10}
+          className="border-2 rounded border-stone-400 p-2"
+          rows={8}
         />
       </div>
-      <button type="submit" className="w-full px-8 py-2 mt-4 shadow-md  shadow-stone-400 border-2 rounded border-stone-400  uppercase bg-[rgba(219,248,207,0.1)] ">
+      <button type="submit" className="w-full px-8 py-2 mt-4 shadow-md  shadow-stone-400 border-2 rounded border-stone-400  uppercase  ">
         Send Message
       </button>
     </form>
