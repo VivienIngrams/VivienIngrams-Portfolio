@@ -20,9 +20,10 @@ interface ProjectItemProps {
       />
       <div className="hidden font-raj group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
         <Link href={projectUrl}>
-        <h4 className="text-md md:text-lg lg:text-3xl font-poiret font-bold uppercase tracking-wide text-white">
-         {title}
-        </h4>
+        <h4 className="text-md md:text-lg lg:text-3xl font-poiret font-bold uppercase tracking-wide text-white text-center whitespace-nowrap overflow-hidden text-ellipsis">
+  {title}
+</h4>
+
           
         </Link>
       </div>

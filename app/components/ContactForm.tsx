@@ -100,7 +100,7 @@ console.log(formData)
           rows={8}
         />
       </div>
-      <button type="submit" className="w-full px-8 py-2 mt-4 shadow-md  shadow-stone-400 border-2 rounded border-stone-400  uppercase  ">
+      <button type="submit" className="w-full px-8 py-2 mt-4 shadow-md  shadow-stone-400 border-2 rounded border-stone-400 hover:scale-105 ease-in transition-300 uppercase  ">
         Send Message
       </button>
     </form>

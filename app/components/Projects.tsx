@@ -1,11 +1,23 @@
 import ProjectItem from "./ProjectItem";
+import Image from "next/image";
+
+const backgroundImgLight =
+  "https://images.unsplash.com/photo-1608114759160-ad0b1bac35b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1936&q=80";
 
 const Projects: React.FC = () => {
   return (
     <div
       id="projects"
-      className="w-full py-24  bg-[#eff0e5]"
+      className="w-full py-24 relative "
     >
+            <Image
+                className="absolute top-0 left-0 right-0 bottom-0 min-h-screen bg-fixed bg-center bg-cover h-full w-full "
+                src={backgroundImgLight}
+                width={1000}
+                height={1500}
+                alt="Sand"
+              />
+              <div className="absolute top-0 left-0 w-full min-h-screen bg-cover bg-gradient-to-b from-[rgb(239,240,229,0.8)] via-[rgba(236,202,202,0.5)] to-[rgb(239,240,229,0.8)] h-full"></div>{" "}
       {" "}
       <div className="max-w-[900px] mx-auto px-4 py-4">
         <p className="mb-16 text-center font-poiret font-bold text-3xl md:text-4xl uppercase tracking-widest">

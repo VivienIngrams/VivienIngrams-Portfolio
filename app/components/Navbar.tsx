@@ -2,59 +2,46 @@
 
 import Image from "next/legacy/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
+import {  useState } from "react";
+
 
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
+const backgroundImgLight = "https://images.unsplash.com/photo-1608114759160-ad0b1bac35b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1936&q=80";
 const NavBar: React.FC = () => {
   const [nav, setNav] = useState(false);
-  const [navBg, setNavBg] = useState("transparent");
-  const pathname = usePathname();
 
-  useEffect(() => {
-    if (
-      pathname === "/research-blog" ||
-      pathname === "/model-portfolio" ||
-      pathname === "/landing-page" ||
-      pathname === "/psychologist" ||
-      pathname === "/mathilde" ||
-      pathname === "/bombarda" ||
-      pathname === "/photography" ||
-      pathname === "/art-facilitation"
-    ) {
-      setNavBg("#eff0e5");
-    } else if (pathname === "/") {
-      setNavBg("transparent");
-      const handleNavBg = () => {
-        if (window.scrollY >= 400) {
-          setNavBg("rgba(239,240,229,0.9)");
-        } else {
-          setNavBg("transparent");
-        }
-      };
-      window.addEventListener("scroll", handleNavBg);
-      return () => {
-        window.removeEventListener("scroll", handleNavBg);
-      };
-    }
-  }, [pathname]);
 
   const handleNav = () => {
     setNav(!nav);
   };
   return (
     <div
-      style={{ backgroundColor: `${navBg}` }}
-      className="fixed w-full h-100 font-poiret font-bold text-red-900 z-[100] "
+     
+      className="fixed w-full h-100 font-poiret  font-bold text-red-900 z-[100] "
     >
+<div
+  className="absolute inset-0 z-[-1] bg-repeat-y bg-top bg-[length:100%_100vh]"
+  style={{
+    backgroundImage: `
+      repeating-linear-gradient(
+        to bottom,
+        rgba(239,240,229,0.8),
+        rgba(247,205,205,0.5),
+        rgba(239,240,229,0.8) 100vh
+      ),
+      url('${backgroundImgLight}')
+    `
+  }}
+></div>
       <div>
         <ul className="hidden md:flex justify-between items-center w-screen h-full px-2 2xl:px-40 md:py-4 ">
           <Link href="/">
-            <li className="tracking-wide uppercase  text-2xl hover:border-b ">
-              Vivien Ingrams
+            <li className=" font-josefin font-medium text-2xl uppercase tracking-tighter">
+              <span className="text-3xl font-josefin tracking-tighter">V</span>
+              ivien <span className="text-3xl font-josefin">I</span>ngrams
             </li>
           </Link>
           <Link href="/#about">
@@ -74,9 +61,10 @@ const NavBar: React.FC = () => {
         </ul>
         <div className="md:hidden flex justify-between items-center w-full px-4 py-2">
           <Link href="/">
-            <span className="text-lg  uppercase ">
-              Vivien Ingrams
-            </span>
+            <h2 className=" font-josefin font-medium text-xl uppercase tracking-tighter">
+              <span className="text-2xl font-josefin tracking-tighter">V</span>
+              ivien <span className="text-2xl font-josefin">I</span>ngrams
+            </h2>
           </Link>
           <div onClick={handleNav} className="p-2 cursor-pointer">
             <AiOutlineMenu size={20} color="#7f1d1d" />
@@ -100,7 +88,10 @@ const NavBar: React.FC = () => {
           <div>
             <div className="flex w-full p-2 items-center uppercase text-lg  justify-between">
               <Link href="/" onClick={handleNav}>
-                Vivien Ingrams
+              <h2 className=" font-josefin font-medium text-xl uppercase tracking-tighter">
+              <span className="text-2xl font-josefin tracking-tighter">V</span>
+              ivien <span className="text-2xl font-josefin">I</span>ngrams
+            </h2>
               </Link>
               <div
                 onClick={handleNav}
@@ -154,22 +145,22 @@ const NavBar: React.FC = () => {
               </Link>
             </ul>
             <div className="pt-40 flex items-center justify-between my-4 w-full sm:w-[80%]">
-              <div className="rounded-full shadow-md shadow-stone-400 p-2  cursor-pointer hover:scale-105 ease-in duration-300">
+              <div className=" p-2  cursor-pointer hover:scale-105 ease-in duration-300">
                 <a href="https://www.linkedin.com/in/vivien-ingrams">
                   <FaLinkedinIn onClick={handleNav} />
                 </a>
               </div>
-              <div className="rounded-full shadow-md shadow-stone-400 p-2  cursor-pointer hover:scale-105 ease-in duration-300">
+              <div className=" p-2  cursor-pointer hover:scale-105 ease-in duration-300">
                 <a href="https://github.com/VivienIngrams">
                   <FaGithub onClick={handleNav} />
                 </a>
               </div>
-              <div className="rounded-full shadow-md shadow-stone-400 p-2  cursor-pointer hover:scale-105 ease-in duration-300">
+              <div className=" p-2  cursor-pointer hover:scale-105 ease-in duration-300">
                 <a href="mailto:vivieningrams@hotmail.com" target="_blank">
                   <AiOutlineMail onClick={handleNav} />
                 </a>
               </div>
-              <div className="rounded-full shadow-md shadow-stone-400 p-2  cursor-pointer hover:scale-105 ease-in duration-300">
+              <div className=" p-2  cursor-pointer hover:scale-105 ease-in duration-300">
                 <Link href="/#contact">
                   <BsFillPersonLinesFill onClick={handleNav} />
                 </Link>

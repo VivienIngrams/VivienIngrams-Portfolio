@@ -20,6 +20,7 @@ type Props = {
   };
 };
 
+const backgroundImgLight = "https://images.unsplash.com/photo-1608114759160-ad0b1bac35b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1936&q=80";
 const ProjectPage: React.FC<Props> = ({ params }: Props) => {
   const { slug } = params;
 
@@ -29,7 +30,21 @@ const ProjectPage: React.FC<Props> = ({ params }: Props) => {
     return <div>Project not found</div>;
   }
   return (
-    <div className="w-full bg-[rgb(239,240,229)] font-raj min-h-screen">
+    <div className="w-full  font-raj min-h-screen">
+      <div
+  className="absolute inset-0 z-[-1] bg-repeat-y bg-top bg-[length:100%_100vh]"
+  style={{
+    backgroundImage: `
+      repeating-linear-gradient(
+        to bottom,
+         rgba(247,205,205,0.5) 
+        rgba(239,240,229,0.8),
+        rgba(247,205,205,0.5)        100vh
+      ),
+      url('${backgroundImgLight}')
+    `
+  }}
+></div>
       <div className="w-screen h-[50vh] relative">
         <div className="absolute top-0 left-0 w-full h-[50vh] bg-black/60 z-10" />
         <Image
@@ -40,7 +55,7 @@ const ProjectPage: React.FC<Props> = ({ params }: Props) => {
           alt={project.title}
         />
         <div className="absolute top-[80%] max-w-[900px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10">
-          <h2 className="uppercase xl:text-5xl font-poiret p-4">{project.title}</h2>
+          <h2 className="uppercase text-4xl xl:text-5xl font-poiret p-4">{project.title}</h2>
         </div>
       </div>
 
@@ -71,29 +86,34 @@ const ProjectPage: React.FC<Props> = ({ params }: Props) => {
             )}
           </div>
           <Link href="/#projects">
-          <p className="text-red-900 p-4 md:pt-10 uppercase font-poiret font-bold cursor-pointer">
+          <p className="hidden md:flex text-red-900 p-4 md:pt-10 uppercase font-poiret font-bold cursor-pointer">
             {" "}
             - Back
           </p>
         </Link>
         </div>
 
-        <div className=" col-span-4 md:col-span-1 uppercase  border-stone-400 border-2 bg-red-900  rounded-md shadow-md shadow-stone-400 m-4 py-4 md:-mr-8">
+        <div className=" col-span-4 md:col-span-1 uppercase  border-stone-400 border-2 bg-red-900  rounded-md shadow-md shadow-stone-400 m-4 py-4 md:-mr-12">
           <div className="p-4">
-            <p className="text-center text-[#E6E3DE] text-xl font-poiret font-bold uppercase tracking-widest pb-2">
+            <p className="text-center text-[#E6E3DE] text-xl font-poiret font-bold uppercase tracking-widest pb-3">
               Technologies
             </p>
             <div className="grid grid-cols-3 md:grid-cols-1">
               {project.technologies.map((tech) => (
-                <p key={tech} className="text-[#E6E3DE] py-1 flex items-center">
-                  <RiRadioButtonFill className="pr-1" /> {tech}
+                <p key={tech} className="text-[#E6E3DE] py-1 pr-2 flex items-center">
+                  <RiRadioButtonFill className="pr-1 text-xs md:text-md" /> {tech}
                 </p>
               ))}
             </div>
           </div>
         </div>
 
-       
+        <Link href="/#projects">
+          <p className="-mt-4 md:hidden text-red-900 p-4 uppercase font-poiret font-bold cursor-pointer">
+            {" "}
+            - Back
+          </p>
+        </Link>
       </div>
     </div>
   );

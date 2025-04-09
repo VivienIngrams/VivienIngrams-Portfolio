@@ -10,8 +10,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         pt: ["var(--font-pt-sans)"],
-        dancing: ["var(--font-dancing)"],
-        // moda: ["var(--font-bodoni-moda)"],
+        josefin: ["var(--font-josefin)"],
         poiret: ["var(--font-poiret-one)"],
         raj: ["var(--font-rajdhani)"],
       },

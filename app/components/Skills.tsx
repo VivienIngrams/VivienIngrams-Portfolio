@@ -18,7 +18,7 @@ const Skills: React.FC = () => {
                 <div className="grid grid-cols-5 justify-center items-center">
                   <div className=" flex justify-center col-span-2 items-center ">{skill.icon}</div>
                   <div className="flex flex-col items-center col-span-3 justify-center">
-                    <p className="text-xs md:text-[17px] md:-ml-4">{skill.name}</p>
+                    <p className="text-xs md:text-[17px] ">{skill.name}</p>
                   </div>
                 </div>
               </div>
