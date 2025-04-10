@@ -37,9 +37,11 @@ const ProjectPage: React.FC<Props> = ({ params }: Props) => {
     backgroundImage: `
       repeating-linear-gradient(
         to bottom,
-         rgba(247,205,205,0.5) 
         rgba(239,240,229,0.8),
-        rgba(247,205,205,0.5)        100vh
+        rgba(217,224,198,0.7),
+        rgba(239,240,229,0.8),
+        rgba(224,203,198,0.7),
+        rgba(239,240,229,0.8) 100vh
       ),
       url('${backgroundImgLight}')
     `
@@ -54,12 +56,12 @@ const ProjectPage: React.FC<Props> = ({ params }: Props) => {
           src={project.imgUrl}
           alt={project.title}
         />
-        <div className="absolute top-[80%] max-w-[900px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10">
+        <div className="absolute top-[80%] md:max-w-[75vw] xl:max-w-[1000px]  w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10">
           <h2 className="uppercase text-4xl xl:text-5xl font-poiret p-4">{project.title}</h2>
         </div>
       </div>
 
-      <div className="max-w-[900px] bg-[rgb(#eff0e5)] mx-auto grid md:grid-cols-5 gap-8 py-8">
+      <div className="md:max-w-[75vw] xl:max-w-[1000px] bg-[rgb(#eff0e5)] mx-auto grid lg:grid-cols-5 gap-8 py-8">
         <div className="col-span-4">
           <p className="text-red-900 p-4 lg:mr-20">{project.description}</p>
           <div className="flex px-4 justify-around md:max-w-[25vw] md:justify-between text-orange-50">
@@ -93,7 +95,7 @@ const ProjectPage: React.FC<Props> = ({ params }: Props) => {
         </Link>
         </div>
 
-        <div className=" col-span-4 md:col-span-1 uppercase  border-stone-400 border-2 bg-red-900  rounded-md shadow-md shadow-stone-400 m-4 py-4 md:-mr-12">
+        <div className=" col-span-4 lg:col-span-1 uppercase  border-stone-400 border-2 bg-red-900  rounded-md shadow-md shadow-stone-400 m-4 py-4 md:-mr-12">
           <div className="p-4">
             <p className="text-center text-[#E6E3DE] text-xl font-poiret font-bold uppercase tracking-widest pb-3">
               Technologies

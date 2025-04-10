@@ -15,7 +15,7 @@ const openResume = () => {
 const Contact: React.FC = () => {
   return (
     <div id="contact" className="w-full lg:h-screen font-raj md:pt-16">
-      <div className="max-w-[900px] m-auto pt-16 w-full">
+      <div className="md:max-w-[75vw] xl:max-w-[1000px]  m-auto pt-16 w-full">
         <div className=" py-12 tracking-widest uppercase font-poiret font-bold text-3xl md:text-4xl text-center">
           Contact
         </div>

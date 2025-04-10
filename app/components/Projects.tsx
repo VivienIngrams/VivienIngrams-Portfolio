@@ -11,11 +11,11 @@ const Projects: React.FC = () => {
       className="w-full py-24 relative "
     >
           
-      <div className="max-w-[900px] mx-auto px-4 py-4">
+      <div className="md:max-w-[75vw] xl:max-w-[1000px]  mx-auto px-4 py-4">
         <p className="mb-16 text-center font-poiret font-bold text-3xl md:text-4xl uppercase tracking-widest">
           Projects
         </p>
-        <div className="grid  gap-8 md:gap-12">
+        <div className="grid gap-8 md:gap-16">
           <ProjectItem
             title="Media Art Research"
             backgroundImg="/assets/Projects/ne.png"

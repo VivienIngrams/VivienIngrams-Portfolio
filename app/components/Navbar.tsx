@@ -23,13 +23,15 @@ const NavBar: React.FC = () => {
       className="fixed w-full h-100 font-poiret  font-bold text-red-900 z-[100] "
     >
 <div
-  className="absolute inset-0 z-[-1] bg-repeat-y bg-top bg-[length:100%_100vh]"
+  className="absolute inset-0 z-[-1] bg-repeat-y bg-top  bg-[length:100%_100vh]"
   style={{
     backgroundImage: `
       repeating-linear-gradient(
         to bottom,
         rgba(239,240,229,0.8),
-        rgba(247,205,205,0.5),
+        rgba(217,224,198,0.7),
+        rgba(239,240,229,0.8),
+        rgba(224,203,198,0.7),
         rgba(239,240,229,0.8) 100vh
       ),
       url('${backgroundImgLight}')
@@ -37,33 +39,33 @@ const NavBar: React.FC = () => {
   }}
 ></div>
       <div>
-        <ul className="hidden md:flex justify-between items-center w-screen h-full px-2 2xl:px-40 md:py-4 ">
+        <ul className="hidden md:flex justify-between items-center w-screen h-full px-2 md:px-20 2xl:px-40 md:py-4 ">
           <Link href="/">
-            <li className=" font-josefin font-medium text-2xl uppercase tracking-tighter">
+            <li className=" font-josefin font-medium text-2xl uppercase  tracking-tighter">
               <span className="text-3xl font-josefin tracking-tighter">V</span>
               ivien <span className="text-3xl font-josefin">I</span>ngrams
             </li>
           </Link>
           <Link href="/#about">
-            <li className=" text-base uppercase hover:border-b">About</li>
+            <li className=" text-base uppercase  tracking-[0.1em] hover:border-b">About</li>
           </Link>
           <Link href="/#skills">
-            <li className=" text-base uppercase hover:border-b">Skills</li>
+            <li className=" text-base tracking-[0.1em] uppercase hover:border-b">Skills</li>
           </Link>
           <Link href="/#projects">
-            <li className=" text-base uppercase hover:border-b">Projects</li>
+            <li className=" text-base tracking-[0.1em] uppercase hover:border-b">Projects</li>
           </Link>
           <Link href="/#contact">
-            <li className="ml-10 text-base uppercase hover:border-b">
+            <li className="ml-10 text-base tracking-[0.1em] uppercase hover:border-b">
               Contact
             </li>
           </Link>
         </ul>
         <div className="md:hidden flex justify-between items-center w-full px-4 py-2">
           <Link href="/">
-            <h2 className=" font-josefin font-medium text-xl uppercase tracking-tighter">
-              <span className="text-2xl font-josefin tracking-tighter">V</span>
-              ivien <span className="text-2xl font-josefin">I</span>ngrams
+            <h2 className="mt-2 font-josefin font-medium text-lg uppercase tracking-tighter">
+              <span className=" text-xl font-josefin tracking-tighter">V</span>
+              ivien <span className="text-xl font-josefin">I</span>ngrams
             </h2>
           </Link>
           <div onClick={handleNav} className="p-2 cursor-pointer">
@@ -88,9 +90,9 @@ const NavBar: React.FC = () => {
           <div>
             <div className="flex w-full p-2 items-center uppercase text-lg  justify-between">
               <Link href="/" onClick={handleNav}>
-              <h2 className=" font-josefin font-medium text-xl uppercase tracking-tighter">
-              <span className="text-2xl font-josefin tracking-tighter">V</span>
-              ivien <span className="text-2xl font-josefin">I</span>ngrams
+              <h2 className="pt-1 font-josefin font-medium text-lg uppercase tracking-tighter">
+              <span className="text-xl font-josefin tracking-tighter">V</span>
+              ivien <span className="text-xl font-josefin">I</span>ngrams
             </h2>
               </Link>
               <div
@@ -105,7 +107,7 @@ const NavBar: React.FC = () => {
             <ul>
               <Link href="/">
                 <li
-                  className="p-5 text-sm uppercase hover:border-b"
+                  className="p-5 text-base uppercase tracking-[0.1em]  hover:border-b"
                   onClick={handleNav}
                 >
                   Home
@@ -113,7 +115,7 @@ const NavBar: React.FC = () => {
               </Link>
               <Link href="/#about">
                 <li
-                  className="p-5 text-sm uppercase hover:border-b"
+                  className="p-5 text-base uppercase tracking-[0.1em]  hover:border-b"
                   onClick={handleNav}
                 >
                   About
@@ -121,7 +123,7 @@ const NavBar: React.FC = () => {
               </Link>
               <Link href="/#skills">
                 <li
-                  className="p-5 text-sm uppercase hover:border-b"
+                  className="p-5 text-base uppercase tracking-[0.1em]  hover:border-b"
                   onClick={handleNav}
                 >
                   Skills
@@ -129,7 +131,7 @@ const NavBar: React.FC = () => {
               </Link>
               <Link href="/#projects">
                 <li
-                  className="p-5 text-sm uppercase hover:border-b"
+                  className="p-5 text-base uppercase tracking-[0.1em]  hover:border-b"
                   onClick={handleNav}
                 >
                   Projects
@@ -137,7 +139,7 @@ const NavBar: React.FC = () => {
               </Link>
               <Link href="/#contact">
                 <li
-                  className="p-3 text-sm uppercase hover:border-b"
+                  className="p-3 text-base uppercase tracking-[0.1em]  hover:border-b"
                   onClick={handleNav}
                 >
                   Contact

@@ -7,7 +7,7 @@ import SkillsData  from "./SkillsData";
 const Skills: React.FC = () => {
   return (
     <div id="skills" className="w-full lg:h-screen px-4 md:py-24 font-poiret font-bold">
-      <div className="max-w-[900px] mx-auto flex flex-col justify-center h-full">
+      <div className="md:max-w-[75vw] xl:max-w-[1000px]  mx-auto flex flex-col justify-center h-full">
         <p className="my-16 text-3xl  md:text-4xl text-center font-poiret  tracking-widest uppercase">
           Skills
         </p>
