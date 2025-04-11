@@ -13,6 +13,7 @@ const Projects: React.FC = () => {
             <ProjectItem
               key={project.slug}
               title={project.title}
+              subtitle={project.subtitle}
               backgroundImg={project.imgUrl2}
               backgroundImgMobile={project.img}
               projectUrl={`/${project.slug}`}

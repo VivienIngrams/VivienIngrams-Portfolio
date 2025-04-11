@@ -1,7 +1,8 @@
 export const projects = [
   {
     slug: "ne",
-    title: "Media Art Research",
+    title: "LabIO",
+    subtitle: "Media Art Research",
     description: `This app, developed using Next.js and hosted on Vercel, serves as a dynamic platform for a media art and choreography research project. Built with TypeScript, React, and Tailwind CSS, it provides a seamless user experience.
 Sanity is used as the headless CMS, offering flexibility and ease of content management, ensuring that updates can be made efficiently. The website is designed to showcase the collaborative research projects and articles of Né Barros and João Martinho Moura.
 `,
@@ -21,7 +22,8 @@ Sanity is used as the headless CMS, offering flexibility and ease of content man
   },
   {
     slug: "joel",
-    title: "Photographer",
+    title: "Joël Bardeau",
+    subtitle: "Photographer",
     description: `This professional portfolio website for a photographer was built with Next.js and hosted on Vercel, combining modern web development technologies with an elegant and user-friendly design. TypeScript, React, and Tailwind CSS ensure a responsive interface, delivering a smooth browsing experience.
 
 The site is powered by Sanity as a headless CMS, allowing the photographer to manage and update content effortlessly. It showcases galleries of their work, categorized for easy navigation.
@@ -39,11 +41,12 @@ Designed with a focus on aesthetics and functionality, this website beautifully 
       "Tailwind CSS",
     ],
     githubUrl: "https://github.com/VivienIngrams/joel",
-    demoUrl: "https://labio.pt/",
+    demoUrl: "https://joelbardeau.com/",
   },
   {
     slug: "photography",
-    title: "Photography and Art Gallery",
+    title: "2regards",
+    subtitle: "Photography and Art Gallery",
     description: `The app was entirely designed for responsivity using Figma. The site is live since March 2024. The logos and favicon were made with Canva. The data is hosted in Sanity Content Lake and fully editable by the owners of the site for content updates. The vertical scrool effect is acheived with the react-horizintal-scroll package. The app was built using Next JS and is hosted on Vercel. It includes a button to subscribe to their Newsletter mailing list. Framer motion is used to smoothly animate the texts and page transitions and the splash page.`,
     img: "/assets/Projects/2regardsMobile.png",
     imgUrl: "/assets/Projects/2regards2.png",
@@ -65,7 +68,8 @@ Designed with a focus on aesthetics and functionality, this website beautifully 
   },
   {
     slug: "mathilde",
-    title: "Mathilde Cudeville, photographe",
+    title: "Mathilde Cudeville",
+    subtitle: "Photographer",
     description: `Built in September 2024 with Next.js and hosted on Vercel, this app showcases the artistic projects of the French photographer Mathilde Cudeville. Sanity is used as a headless CMS. The app was designed on Figma.`,
     img: "/assets/Projects/mathildeMobile.png",
     imgUrl: "/assets/Projects/mathilde.png",
@@ -86,7 +90,8 @@ Designed with a focus on aesthetics and functionality, this website beautifully 
   },
   {
     slug: "model-portfolio",
-    title: "Model Portfolio",
+    title: "Sakiko Oishi",
+    subtitle: "Model Portfolio",
     description: `Built in July 2023 with Next.js and hosted on Netlify, this web application connects with a MongoDB Cluster to store data. The Firebase SDK is integrated for user authentication, allowing authorized administrators to sign in using their email address and password, creating a secure environment for efficient data management. With input forms, authorized users can manage and manipulate data, enabling easy additions, updates, and deletions.`,
     img: "/assets/Projects/KikoMobile.png",
     imgUrl: "/assets/Projects/KikoSiteBook.png",
@@ -105,7 +110,8 @@ Designed with a focus on aesthetics and functionality, this website beautifully 
   },
   {
     slug: "psychologist",
-    title: "Psychologist's Professional Website",
+    title: "Marta Guimaraes",
+    subtitle: "Psychologist and Coach",
     description: `Published in February 2024, this app was entirely designed for responsivity using Figma. The logos and favicon were made with Canva. The app was built using Next JS and is hosted on Vercel. A Contact form uses Nodemailer to send messages directly from the website to the owner. Framer motion is used to smoothly animate the texts.`,
     img: "/assets/Projects/MartaMobile.png",
     imgUrl: "/assets/Projects/Marta1.png",
@@ -127,7 +133,8 @@ Designed with a focus on aesthetics and functionality, this website beautifully 
 
   {
     slug: "landing-page",
-    title: "Landing Page",
+    title: "Banhos e Tosquias",
+    subtitle: "Business Landing Page",
     description: `This is a landing page for a local animal grooming service in Porto. This user-friendly SPA is built with React, Next.js, and TypeScript. It includes Google Maps for simple navigation and a contact form for reaching out using Nodemailer. Framer Motion is used to add some subtle style and animation, while Tailwind CSS ensures a clean and modern look. The site is hosted since November 2023 on Netlify for reliable access.`,
     img: "/assets/Projects/LandingSiteMobile.png",
     imgUrl: "/assets/Projects/LandingSite.png",
@@ -147,9 +154,10 @@ Designed with a focus on aesthetics and functionality, this website beautifully 
   },
   {
     slug: "art-facilitation",
-    title: "Art Facilitation",
+    title: "Celeste Burr Herrera",
+    subtitle: "Art Facilitation",
     description: `This website, developed using WordPress, Elementor, and CSS, serves as a platform for an art facilitator since April 2023. It seamlessly blends aesthetics with functionality, providing a canvas for the artist's work and their exploration of the profound connections between art, health, culture, and human relationships through various mediums. The site has since recreated from scratch using Vercel for hosting and Sanity as a headless content management system for easy content updates.`,
-    img: "/assets/Projects/CelesteSiteMobile.png",
+    img: "/assets/Projects/CelesteMobile.png",
     imgUrl: "/assets/Projects/CelesteSite.png",
     imgUrl2: "/assets/Projects/CelesteSiteWorkshops.png",
     technologies: ["Wordpress", "Elementor", "CSS", "HTML", "Vercel", "Sanity"],
@@ -159,8 +167,9 @@ Designed with a focus on aesthetics and functionality, this website beautifully 
   {
     slug: "bombarda",
     title: "Bombarda",
+    subtitle: "Creative Quarter, Porto",
     description: `Built in June 2024 with Next.js and hosted on Vercel, this app brings together all of the places of interest in the Bombarda Art District in Porto, Portugal. For ease of use and organisation, the places are separated into three categories: Art, Food and Drink, and Shops. It is also possible to filter through the different options with tags so that users can find what they are interested in. The main page also displays a random selection to help users discover new places in the neighbourhood. Sanity is used as a headless CMS. The app was designed on Figma.`,
-    img: "/assets/Projects/bombardaMobile.png",
+    img: "/assets/Projects/BombardaMobile.png",
     imgUrl: "/assets/Projects/bombarda.png",
     imgUrl2: "/assets/Projects/bombarda.png",
     technologies: [
@@ -179,9 +188,11 @@ Designed with a focus on aesthetics and functionality, this website beautifully 
   },
   {
     slug: "research-blog",
-    title: "Research Blog",
+    title: "Alex Ingrams",
+    subtitle:
+      "Transparency and technology in public policy",
     description: `This app was built in September 2023 using Next JS and hosted on Vercel. The data is stored in Firebase realtime database. User authentication is available through the Firebase SDK. This enable authorised administrators to sign in with an email address. Input forms in turn enable authorized users to add, update and delete blog data.`,
-    img: "/assets/Projects/AlexSiteMobile.png",
+    img: "/assets/Projects/AlexMobile.png",
     imgUrl: "/assets/Projects/AlexSiteResearch1.png",
     imgUrl2: "/assets/Projects/AlexSiteResearch1.png",
     technologies: [
