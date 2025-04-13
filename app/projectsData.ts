@@ -29,7 +29,7 @@ Sanity is used as the headless CMS, offering flexibility and ease of content man
 The site is powered by Sanity as a headless CMS, allowing the photographer to manage and update content effortlessly. It showcases galleries of their work, categorized for easy navigation.
 
 Designed with a focus on aesthetics and functionality, this website beautifully highlights the photographer’s artistic vision and serves as a key tool for connecting with their audience and clients.`,
-    img: "/assets/Projects/joelMobile.png",
+    img: "/assets/Projects/JoelMobile.png",
     imgUrl: "/assets/Projects/joel1.png",
     imgUrl2: "/assets/Projects/joel.png",
     technologies: [
@@ -71,7 +71,7 @@ Designed with a focus on aesthetics and functionality, this website beautifully 
     title: "Mathilde Cudeville",
     subtitle: "Photographer",
     description: `Built in September 2024 with Next.js and hosted on Vercel, this app showcases the artistic projects of the French photographer Mathilde Cudeville. Sanity is used as a headless CMS. The app was designed on Figma.`,
-    img: "/assets/Projects/mathildeMobile.png",
+    img: "/assets/Projects/MathildeMobile.png",
     imgUrl: "/assets/Projects/mathilde.png",
     imgUrl2: "/assets/Projects/mathilde1.png",
     technologies: [
