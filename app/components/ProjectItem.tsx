@@ -19,31 +19,33 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
   demoUrl,
 }) => {
   return (
-    <div className="relative flex items-center justify-center h-auto w-full shadow-md shadow-stone-400 border-2 rounded border-stone-400 group hover:bg-gradient-to-r from-[black] to-red-800">
-      {/* Use different images for small and larger screens */}
-      <div className="block sm:hidden relative w-full h-[600px]">
+<div className="relative flex items-center justify-center h-auto w-full shadow-md shadow-stone-400 border-2 rounded border-stone-400 group hover:bg-gradient-to-r from-[black] to-red-800 overflow-hidden">
+{/* Use different images for small and larger screens */}
+      <div className="block sm:hidden relative w-full h-[620px]">
+        <Image
+          className="group-hover:opacity-20 rounded object-fill"
+          src={backgroundImgMobile}
+          alt="Website project"
+          layout="fill"
+        />
+      </div>
+      <div className="hidden sm:block relative w-full h-[525px]">
   <Image
-    className="group-hover:opacity-20 rounded object-fill"
-    src={backgroundImgMobile}
+    className="block group-hover:opacity-20 rounded object-fill"
+    src={backgroundImg}
     alt="Website project"
     layout="fill"
   />
 </div>
-      <div className="hidden sm:block">
-        <Image
-          className="group-hover:opacity-20 rounded"
-          src={backgroundImg}
-          alt="Website project"
-          height={500} // Landscape orientation for larger screens
-          width={1000}
-        />
-      </div>
+
       <div className="hidden font-raj group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
         <Link href={projectUrl}>
           <h2 className="text-2xl lg:text-3xl 2xl:text-4xl font-poiret font-bold uppercase tracking-wide text-white text-center whitespace-nowrap overflow-hidden text-ellipsis">
             {title}
           </h2>
-          <h3 className="text-white w-full text-center block text-lg md:text-lg">{subtitle} </h3>
+          <h3 className="text-white w-full text-center block text-lg md:text-lg">
+            {subtitle}{" "}
+          </h3>
         </Link>
         {/* Flex container for horizontal alignment */}
         <div className="mt-4 flex flex-col md:flex-row items-center justify-center gap-4">
