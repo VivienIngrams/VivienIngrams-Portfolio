@@ -21,6 +21,28 @@ Sanity is used as the headless CMS, offering flexibility and ease of content man
     demoUrl: "https://labio.pt/",
   },
   {
+    slug: "chemin-du-vivant",
+    title: "Le Chemin du Vivant",
+    subtitle: "Services in Geobiology",
+    description: ` Le Chemin du Vivant is a professional website dedicated to geobiology and well-being services. Built with Next.js and hosted on Vercel, the site offers a clear and structured presentation of services such as habitat harmonization and radiesthesia. The website was designed with a clean and accessible interface to guide visitors through the different areas of expertise, while also explaining the process of an intervention step by step. A contact form powered by Nodemailer allows users to easily get in touch for consultations or additional information. With a focus on clarity, trust, and user experience, this platform highlights the practitioner’s holistic approach to creating harmonious living and working environments.`,
+    img: "/assets/Projects/cheminMobile.png",
+    imgUrl: "/assets/Projects/chemin2.jpg",
+    imgUrl2: "/assets/Projects/chemin.png",
+    technologies: [
+      "Typescript",
+      "Vercel",
+      "Sanity",
+      "React",
+      "NextJS",
+      "Tailwind CSS",
+      "Nodemailer",
+      "V0",
+    ],
+    githubUrl: "https://github.com/VivienIngrams/geo-biologie",
+    demoUrl: "https://lecheminduvivant.fr/",
+  },
+
+  {
     slug: "joel",
     title: "Joël Bardeau",
     subtitle: "Photographer",
@@ -65,6 +87,18 @@ Designed with a focus on aesthetics and functionality, this website beautifully 
     demoUrl: "https://2regards.net",
     designUrl:
       "https://www.figma.com/file/stff81bEWbHdr8KgWwGetb/2regards?type=design",
+  },
+  {
+    slug: "geobiologie",
+    title: "Joëlle Villegas",
+    subtitle: "Geobiologist",
+    description: `This app was built in April 2025 with Next.js and hosted on Vercel. The app includes a contact form using Nodemailer to send messages directly from the website to the owner.`,
+    img: "/assets/Projects/Joelle.png",
+    imgUrl: "/assets/Projects/JoelleSite.png",
+    imgUrl2: "/assets/Projects/JoelleSite.png",
+    technologies: ["React", "NextJS", "Tailwind CSS", "Typescript", "Vercel"],
+    githubUrl: "https://github.com/VivienIngrams/Geo-biologie",
+    demoUrl: "https://lecheminduvivant.vercel.app",
   },
   {
     slug: "mathilde",
@@ -189,8 +223,7 @@ Designed with a focus on aesthetics and functionality, this website beautifully 
   {
     slug: "research-blog",
     title: "Alex Ingrams",
-    subtitle:
-      "Transparency and technology in public policy",
+    subtitle: "Transparency and technology in public policy",
     description: `This app was built in September 2023 using Next JS and hosted on Vercel. The data is stored in Firebase realtime database. User authentication is available through the Firebase SDK. This enable authorised administrators to sign in with an email address. Input forms in turn enable authorized users to add, update and delete blog data.`,
     img: "/assets/Projects/AlexMobile.png",
     imgUrl: "/assets/Projects/AlexSiteResearch1.png",
