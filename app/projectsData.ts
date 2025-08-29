@@ -88,18 +88,7 @@ Designed with a focus on aesthetics and functionality, this website beautifully 
     designUrl:
       "https://www.figma.com/file/stff81bEWbHdr8KgWwGetb/2regards?type=design",
   },
-  {
-    slug: "geobiologie",
-    title: "Joëlle Villegas",
-    subtitle: "Geobiologist",
-    description: `This app was built in April 2025 with Next.js and hosted on Vercel. The app includes a contact form using Nodemailer to send messages directly from the website to the owner.`,
-    img: "/assets/Projects/Joelle.png",
-    imgUrl: "/assets/Projects/JoelleSite.png",
-    imgUrl2: "/assets/Projects/JoelleSite.png",
-    technologies: ["React", "NextJS", "Tailwind CSS", "Typescript", "Vercel"],
-    githubUrl: "https://github.com/VivienIngrams/Geo-biologie",
-    demoUrl: "https://lecheminduvivant.vercel.app",
-  },
+  
   {
     slug: "mathilde",
     title: "Mathilde Cudeville",
