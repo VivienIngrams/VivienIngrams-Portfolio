@@ -2,13 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* your custom styles below */
+html,body { height:100%; }
+
 html {
   scroll-behavior: smooth;
 }
 
 @layer base {
   body {
-    @apply  text-[#991b1b] tracking-wide
+    @apply  text-[#991b1b] tracking-wide;
   }
 /* 
   h1, h2, h3, h4, h5, h6 {
@@ -17,20 +20,17 @@ html {
 
   h1 {
   
-    @apply text-4xl sm:text-5xl md:text-6xl xl:text-8xl
+    @apply text-4xl sm:text-5xl md:text-6xl xl:text-8xl;
   }
   h2 {
-    @apply text-3xl md:text-4xl sm:text-4xl
+    @apply text-3xl md:text-4xl sm:text-4xl;
   }
   li {
-    @apply cursor-pointer    
+    @apply cursor-pointer  ;  
   }
   button {
-    @apply shadow-md text-orange-50 shadow-gray-400  uppercase bg-[#7f1d1d]   }
+    @apply shadow-md text-orange-50 shadow-gray-400  uppercase bg-[#7f1d1d];   }
   
 }
 
-/* .background-img {
-  background-image:   url("https://images.unsplash.com/photo-1608114759160-ad0b1bac35b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1936&q=80");
-  ;
-} */
+

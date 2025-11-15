@@ -1,9 +1,6 @@
 import "./globals.css";
 import { PT_Sans, Poiret_One, Rajdhani, Josefin_Sans } from "next/font/google";
 import NavBar from "./components/Navbar";
-import Image from "next/image";
-const backgroundImgLight =
-  "https://images.unsplash.com/photo-1608114759160-ad0b1bac35b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1936&q=80";
 
 const josefin = Josefin_Sans({
   weight: ["100", "200", "300", "400", "500", "600", "700"],
