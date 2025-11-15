@@ -1,5 +1,28 @@
 export const projects = [
   {
+    slug: "peter",
+    title: "Peter Lippmann",
+    subtitle: "Art photographer",
+    description: `This professional portfolio website for a renowned Parisian photographer was built with Next.js and hosted on Vercel, combining modern web development technologies with an elegant and user-friendly design. TypeScript, React, and Tailwind CSS ensure a responsive interface, delivering a smooth browsing experience.
+
+The site is powered by Sanity as a headless CMS, allowing the photographer to manage and update content effortlessly. It showcases galleries of their work, categorized for easy navigation.
+
+Designed with a focus on aesthetics and functionality, this website beautifully highlights the photographer’s artistic vision and serves as a key tool for connecting with their audience and clients.`,
+    img: "/assets/Projects/peter (1).png",
+    imgUrl: "/assets/Projects/peter (3).png",
+    imgUrl2: "/assets/Projects/peter (2).png",
+    technologies: [
+      "Typescript",
+      "Vercel",
+      "Sanity",
+      "React",
+      "NextJS",
+      "Tailwind CSS",
+    ],
+    githubUrl: "https://github.com/VivienIngrams/Pete",
+    demoUrl: "https://peterlippmann.com/",
+  },
+  {
     slug: "ne",
     title: "LabIO",
     subtitle: "Media Art Research",
@@ -20,6 +43,7 @@ Sanity is used as the headless CMS, offering flexibility and ease of content man
     githubUrl: "https://github.com/VivienIngrams/ne-joao",
     demoUrl: "https://labio.pt/",
   },
+ 
   {
     slug: "chemin-du-vivant",
     title: "Le Chemin du Vivant",
@@ -88,7 +112,28 @@ Designed with a focus on aesthetics and functionality, this website beautifully 
     designUrl:
       "https://www.figma.com/file/stff81bEWbHdr8KgWwGetb/2regards?type=design",
   },
-  
+   {
+    slug: "marta-almeida",
+    title: "Marta Almeida",
+    subtitle: "Dancer and Choreographer",
+    description: `This project is a dynamic website built with Next.js and deployed on Vercel, created as a digital platform for a dancer and choreographer. Developed using TypeScript, React, and Tailwind CSS, it delivers a smooth and responsive user experience across devices.
+
+To support flexible content management, the site integrates Sanity as its headless CMS, allowing updates to be made quickly and efficiently. The platform is designed to highlight the dancer’s work, showcasing both artistic projects and professional background in a clear, engaging way.
+`,
+    img: "/assets/Projects/marta (3).png",
+    imgUrl: "/assets/Projects/marta (2).png",
+    imgUrl2: "/assets/Projects/marta (1).png",
+    technologies: [
+      "Typescript",
+      "Vercel",
+      "Sanity",
+      "React",
+      "NextJS",
+      "Tailwind CSS",
+    ],
+    githubUrl: "https://github.com/VivienIngrams/marta-almeida",
+    demoUrl: "https://marta-almeida.com/",
+  },
   {
     slug: "mathilde",
     title: "Mathilde Cudeville",

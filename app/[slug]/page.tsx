@@ -101,8 +101,8 @@ const ProjectPage: React.FC<Props> = ({ params }: Props) => {
               Technologies
             </p>
             <div className="grid grid-cols-3 md:grid-cols-1">
-              {project.technologies.map((tech) => (
-                <p key={tech} className="text-[#E6E3DE] py-1 pr-2 flex items-center">
+              {project.technologies.map((tech, i) => (
+                <p key={tech + i} className="text-[#E6E3DE] py-1 pr-2 flex items-center">
                   <RiRadioButtonFill className="pr-1 text-xs md:text-md" /> {tech}
                 </p>
               ))}

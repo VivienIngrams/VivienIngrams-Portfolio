@@ -9,9 +9,9 @@ const Projects: React.FC = () => {
           Projects
         </p>
         <div className="grid gap-8 md:gap-16">
-          {projects.map((project) => (
+          {projects.map((project, i) => (
             <ProjectItem
-              key={project.slug}
+              key={project.slug + i}
               title={project.title}
               subtitle={project.subtitle}
               backgroundImg={project.imgUrl2}
