@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import { projects } from "../projectsData";
@@ -51,16 +51,17 @@ const ProjectPage: React.FC<Props> = ({ params }: Props) => {
         <div className="absolute top-0 left-0 w-full h-[50vh] bg-black/60 z-10" />
         <Image
           className="absolute z-1"
-          layout="fill"
-          objectFit="cover"
           src={project.imgUrl}
           alt={project.title}
-        />
+          fill
+          sizes="100vw"
+          style={{
+            objectFit: "cover"
+          }} />
         <div className="absolute top-[80%] md:max-w-[75vw] xl:max-w-[1000px]  w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10">
           <h2 className="uppercase text-4xl xl:text-5xl font-poiret p-4">{project.title}</h2>
         </div>
       </div>
-
       <div className="md:max-w-[75vw] xl:max-w-[1000px] bg-[rgb(#eff0e5)] mx-auto grid lg:grid-cols-5 gap-8 py-8">
         <div className="col-span-4">
           <p className="text-red-900 p-4 lg:mr-20">{project.description}</p>

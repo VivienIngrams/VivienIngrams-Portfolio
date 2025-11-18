@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
-import Image from "next/legacy/image"
+import Image from "next/image"
 import { AiOutlineMail } from "react-icons/ai"
 import { BsFillPersonLinesFill } from "react-icons/bs"
 import { FaGithub, FaLinkedinIn } from "react-icons/fa"
@@ -77,12 +77,11 @@ const HeroSection = () => {
               <div className="relative  w-32 h-48 md:w-44 md:h-64 2xl:w-52 2xl:h-72 overflow-hidden rounded-full border-2 border-red-900/70 shadow-sm">
                 <Image
                   src="/Vivien.jpg"
-                 layout="fill"
-                  sizes="(max-width: 768px) 12rem, 16rem"
                   className="object-cover"
                   alt="Vivien Ingrams"
                   priority
-                />
+                  fill
+                  sizes="(max-width: 768px) 12rem, 16rem" />
               </div>
 
             </div>
@@ -90,7 +89,7 @@ const HeroSection = () => {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default HeroSection
