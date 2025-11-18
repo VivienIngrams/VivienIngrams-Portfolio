@@ -77,7 +77,7 @@ const HeroSection = () => {
               <div className="relative  w-32 h-48 md:w-44 md:h-64 2xl:w-52 2xl:h-72 overflow-hidden rounded-full border-2 border-red-900/70 shadow-sm">
                 <Image
                   src="/Vivien.jpg"
-                  fill
+                 layout="fill"
                   sizes="(max-width: 768px) 12rem, 16rem"
                   className="object-cover"
                   alt="Vivien Ingrams"
