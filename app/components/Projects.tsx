@@ -16,7 +16,7 @@ const Projects: React.FC = () => {
               subtitle={project.subtitle}
               backgroundImg={project.imgUrl2}
               backgroundImgMobile={project.img}
-              projectUrl={`/${project.slug}`}
+              projectUrl={`/projects/${project.slug}`}
               demoUrl={project.demoUrl}
             />
           ))}

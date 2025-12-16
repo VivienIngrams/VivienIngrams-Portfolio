@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
-import { projects } from "../projectsData";
+import { projects } from "../../projectsData";
 
 interface Project {
   slug: string;
@@ -14,21 +14,25 @@ interface Project {
   designUrl?: string;
 }
 
+const backgroundImgLight = "https://images.unsplash.com/photo-1608114759160-ad0b1bac35b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1936&q=80";
 type Props = {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 };
 
-const backgroundImgLight = "https://images.unsplash.com/photo-1608114759160-ad0b1bac35b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1936&q=80";
-const ProjectPage: React.FC<Props> = ({ params }: Props) => {
-  const { slug } = params;
+const ProjectPage = async ({ params }: Props) => {
+  const { slug } = await params;
 
+
+  console.log('projects length', projects?.length);
+   console.log('slug', slug);
   const project = projects.find((proj) => proj.slug === slug);
 
   if (!project) {
     return <div>Project not found</div>;
   }
+
   return (
     <div className="w-full  font-raj min-h-screen">
       <div
