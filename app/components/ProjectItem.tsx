@@ -23,7 +23,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
       {/* Use different images for small and larger screens */}
       <div className="block sm:hidden relative w-full h-[620px]">
         <Image
-          className="group-hover:opacity-20 rounded object-fill"
+          className="group-hover:opacity-10 rounded object-fill"
           src={backgroundImgMobile}
           alt="Website project"
           fill
@@ -31,7 +31,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
       </div>
       <div className="hidden sm:block relative w-full h-[525px]">
   <Image
-    className="block group-hover:opacity-20 rounded object-fill"
+    className="block group-hover:opacity-10 rounded object-fill"
     src={backgroundImg}
     alt="Website project"
     fill

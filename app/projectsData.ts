@@ -43,7 +43,20 @@ Sanity is used as the headless CMS, offering flexibility and ease of content man
     githubUrl: "https://github.com/VivienIngrams/ne-joao",
     demoUrl: "https://labio.pt/",
   },
- 
+
+  {
+    slug: "filo",
+    title: "Filò Knitwear",
+    subtitle: "E-commerce platform",
+    description: `This website was built using Shopify as an e-commerce platform for an ethical knitwear brand. Custom HTML and CSS were implemented to create a distinctive visual identity and a smooth, user-friendly shopping experience. Shopify’s built-in commerce tools support secure transactions and efficient shop management, enabling the brand to showcase its knitwear collections and ethical values effectively.`,
+    img: "/assets/Projects/filoMobile.png",
+    imgUrl: "/assets/Projects/filo.png",
+    imgUrl2: "/assets/Projects/filo1.png",
+    technologies: ["Shopify", "HTML", "CSS"],
+
+    demoUrl: "https://filoknitwear.com/",
+  },
+
   {
     slug: "chemin-du-vivant",
     title: "Le Chemin du Vivant",
@@ -112,7 +125,7 @@ Designed with a focus on aesthetics and functionality, this website beautifully 
     designUrl:
       "https://www.figma.com/file/stff81bEWbHdr8KgWwGetb/2regards?type=design",
   },
-   {
+  {
     slug: "marta-almeida",
     title: "Marta Almeida",
     subtitle: "Dancer and Choreographer",
