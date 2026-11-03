@@ -245,27 +245,5 @@ To support flexible content management, the site integrates Sanity as its headle
     githubUrl: "https://github.com/VivienIngrams",
     demoUrl: "https://celesteburrherrera.com",
   },
-  {
-    slug: "bombarda",
-    title: "Bombarda",
-    subtitle: "Creative Quarter, Porto",
-    description: `Built in June 2024 with Next.js and hosted on Vercel, this app brings together all of the places of interest in the Bombarda Art District in Porto, Portugal. For ease of use and organisation, the places are separated into three categories: Art, Food and Drink, and Shops. It is also possible to filter through the different options with tags so that users can find what they are interested in. The main page also displays a random selection to help users discover new places in the neighbourhood. Sanity is used as a headless CMS. The app was designed on Figma.`,
-    img: "/assets/Projects/BombardaMobile.png",
-    imgUrl: "/assets/Projects/bombarda.png",
-    imgUrl2: "/assets/Projects/bombarda.png",
-    technologies: [
-      "Typescript",
-      "Vercel",
-      "Sanity",
-      "Figma",
-      "React",
-      "NextJS",
-      "Tailwind CSS",
-    ],
-    githubUrl: "https://github.com/VivienIngrams/Bombarda",
-    demoUrl: "https://bombarda-app.vercel.app/",
-    designUrl:
-      "https://www.figma.com/design/NgxKSrPCzHglqWXHGAgRxd/Bombarda-Digital-Lab?node-id=1625-3626&t=J5jfEZI2K7L9M6rZ-1",
-  },
   
 ];
