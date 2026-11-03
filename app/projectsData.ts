@@ -267,23 +267,5 @@ To support flexible content management, the site integrates Sanity as its headle
     designUrl:
       "https://www.figma.com/design/NgxKSrPCzHglqWXHGAgRxd/Bombarda-Digital-Lab?node-id=1625-3626&t=J5jfEZI2K7L9M6rZ-1",
   },
-  {
-    slug: "research-blog",
-    title: "Alex Ingrams",
-    subtitle: "Transparency and technology in public policy",
-    description: `This app was built in September 2023 using Next JS and hosted on Vercel. The data is stored in Firebase realtime database. User authentication is available through the Firebase SDK. This enable authorised administrators to sign in with an email address. Input forms in turn enable authorized users to add, update and delete blog data.`,
-    img: "/assets/Projects/AlexMobile.png",
-    imgUrl: "/assets/Projects/AlexSiteResearch1.png",
-    imgUrl2: "/assets/Projects/AlexSiteResearch1.png",
-    technologies: [
-      "React",
-      "NextJS",
-      "Tailwind CSS",
-      "Javascript",
-      "Firebase",
-      "Vercel",
-    ],
-    githubUrl: "https://github.com/VivienIngrams/AlexIngrams",
-    demoUrl: "https://alex-ingrams.vercel.app",
-  },
+  
 ];
